@@ -178,10 +178,11 @@ function setupRouteExplorer() {
       const source = travelMapSource(state.data?.routeMap, placePin.dataset.mapRegion);
       const options = placeOptions(source, placePin.dataset.placeId);
       const [label, query] = options[0];
+      const place = canonicalPlaceFor(placePin.dataset.placeId);
       showPopover(placePin, `<header><small>${escapeHtml(placePin.dataset.placeRole)}</small><strong data-popup-place-label>${escapeHtml(label)}</strong></header>
         ${options.length > 1 ? `<div class="popup-place-options">${options.map(([name, value], index) => `<button type="button" data-popup-query="${escapeHtml(value)}" data-popup-label="${escapeHtml(name)}" aria-pressed="${index === 0}">${escapeHtml(name)}</button>`).join("")}</div>` : ""}
         <p class="route-place-address" data-popup-address>${escapeHtml(canonicalPlaceFor(placePin.dataset.placeId)?.address || query)}</p>
-        <footer><a data-popup-external href="${escapeHtml(safeExternalUrl(canonicalPlaceFor(placePin.dataset.placeId)?.navigation?.url) || mapsSearch(query))}" target="_blank" rel="noopener noreferrer">用高德地图打开 ↗</a><small>手机可尝试唤起高德 App；定位与导航需要联网。</small></footer>`, true);
+        <footer><span data-popup-navigation>${amapLinkMarkup(label, place?.navigation?.query || query, place?.navigation?.url, "popup")}</span><small>手机需已安装高德 App；若浏览器限制跳转，可在系统浏览器中打开本页。</small></footer>`, true);
       return;
     }
     const pin = event.target.closest("[data-transport-day]");
@@ -202,7 +203,7 @@ function setupRouteExplorer() {
       const place = canonicalPlaceFor(activePin.dataset.placeId);
       const source = travelMapSource(state.data?.routeMap, activePin.dataset.mapRegion);
       const isFirst = query === placeOptions(source, activePin.dataset.placeId)[0][1];
-      $("[data-popup-external]", popover).href = (isFirst && safeExternalUrl(place?.navigation?.url)) || mapsSearch(query);
+      $("[data-popup-navigation]", popover).innerHTML = amapLinkMarkup(label, isFirst ? (place?.navigation?.query || query) : query, isFirst ? place?.navigation?.url : mapsSearch(query), "popup");
       return;
     }
     if (event.target.closest(".route-popover")) return;

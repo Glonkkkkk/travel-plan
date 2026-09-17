@@ -449,3 +449,8 @@ button:focus-visible,a:focus-visible {outline:2px solid var(--lake);outline-offs
 }
 
 .route-place-address{padding:12px 18px;margin:0;font-size:14px;line-height:1.65;color:var(--ink,#203e35);overflow-wrap:anywhere}
+
+.amap-link-group{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px 10px}
+.amap-fallback{font-size:12px;color:var(--muted,#63715f)}
+.amap-fallback[hidden]{display:none}
+.amap-fallback a{color:inherit;text-underline-offset:3px}

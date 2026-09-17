@@ -143,6 +143,25 @@ function mapsSearch(query) {
   return `https://uri.amap.com/search?keyword=${encodeURIComponent(query)}&view=map&callnative=1&src=travelplan`;
 }
 
+function amapLinkMarkup(label, query, url, variant = "schedule") {
+  const links = TravelAmap.linksFor(query, safeExternalUrl(url) || mapsSearch(query), {
+    userAgent: navigator.userAgent, platform: navigator.platform, maxTouchPoints: navigator.maxTouchPoints
+  });
+  const text = variant === "popup" ? (links.isApp ? "用高德 App 打开 ↗" : "用高德网页版打开 ↗") : `📍 ${label}`;
+  const className = variant === "schedule" ? "schedule-map-link" : "amap-popup-link";
+  return `<span class="amap-link-group"><a class="${className}" href="${escapeHtml(links.primaryUrl)}" ${links.isApp ? 'data-amap-app-link' : 'target="_blank" rel="noopener noreferrer"'} aria-label="在高德${links.isApp ? ' App' : '地图'}中搜索 ${escapeHtml(label)}">${escapeHtml(text)}</a>${links.isApp ? `<span class="amap-fallback" hidden>未打开？<a href="${escapeHtml(links.webUrl)}" target="_blank" rel="noopener noreferrer">用网页版</a></span>` : ''}</span>`;
+}
+
+function setupAmapAppLinks() {
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-amap-app-link]");
+    if (!link) return;
+    // Keep the native link click intact. Do not force a timed redirect back from the app.
+    const fallback = link.closest(".amap-link-group")?.querySelector(".amap-fallback");
+    if (fallback) fallback.hidden = false;
+  });
+}
+
 function heroDestinationFor(trip) {
   const destinations = (trip.countries || []).filter((country) => (trip.primaryDestinationCountries || []).includes(country.code));
   const isDomestic = destinations.length > 0 && destinations.every((country) => country.code === "CN");
@@ -442,9 +461,7 @@ function dayCard(day) {
   const shownTicketIds = new Set();
   const schedule = day.schedule.map((item) => {
     const destinations = navigationDestinations(item);
-    const mapLinks = destinations.map((destination) => `
-      <a class="schedule-map-link" href="${escapeHtml(safeExternalUrl(destination.url) || mapsSearch(destination.query))}" target="_blank" rel="noopener noreferrer" aria-label="在高德地图定位 ${escapeHtml(destination.label)}">📍 ${escapeHtml(destination.label)}</a>
-    `).join("");
+    const mapLinks = destinations.map((destination) => amapLinkMarkup(destination.label, destination.query, destination.url)).join("");
     const scheduleTickets = ticketsForSchedule(day, item).filter((ticket) => {
       if (shownTicketIds.has(ticket.id)) return false;
       shownTicketIds.add(ticket.id);
@@ -870,6 +887,7 @@ async function init() {
     window.TRAVEL_PLAN_DATA = state.data;
     document.dispatchEvent(new CustomEvent("travel-data-ready", { detail: state.data }));
     applyModuleConfig();
+    setupAmapAppLinks();
     if (moduleEnabled("overview")) preloadDefaultRouteMap();
     renderHero();
     if (moduleEnabled("flights")) renderFlights();
