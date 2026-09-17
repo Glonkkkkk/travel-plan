@@ -2879,8 +2879,8 @@
           "x": 55,
           "y": 155,
           "gap": 38,
-          "columns": 2,
-          "columnGap": 460
+          "columns": 1,
+          "columnGap": 0
         },
         "annotations": [],
         "places": [
@@ -3353,8 +3353,8 @@
           "x": 55,
           "y": 155,
           "gap": 38,
-          "columns": 2,
-          "columnGap": 460
+          "columns": 1,
+          "columnGap": 0
         },
         "annotations": [],
         "places": [
@@ -3849,8 +3849,8 @@
           "x": 55,
           "y": 155,
           "gap": 38,
-          "columns": 2,
-          "columnGap": 460
+          "columns": 1,
+          "columnGap": 0
         },
         "annotations": [],
         "places": [
@@ -4127,8 +4127,8 @@
           "x": 55,
           "y": 155,
           "gap": 38,
-          "columns": 2,
-          "columnGap": 460
+          "columns": 1,
+          "columnGap": 0
         },
         "annotations": [],
         "places": [
