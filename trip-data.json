@@ -1,0 +1,3615 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": true,
+      "ledger": false
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "southwest-20260925-two-travelers",
+    "title": "贵阳 · 大理 · 泸沽湖 · 丽江｜双人秋日旅行",
+    "language": "zh-CN",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-07-compact-basin.webp",
+        "assets/maps/templates/template-04-urban.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-09-25",
+    "endDate": "2026-10-07",
+    "dayCount": 13,
+    "nightCountAway": 9,
+    "countries": [
+      {
+        "code": "CN",
+        "name": "China",
+        "nameZh": "中国"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "CN"
+    ],
+    "citiesAndAreas": [
+      "贵阳",
+      "安顺",
+      "荔波",
+      "大理",
+      "泸沽湖",
+      "丽江"
+    ],
+    "routeSummary": "杭州 → 贵阳 → 黄果树 / 小七孔 → 大理 → 泸沽湖 → 丽江 → 重庆（回家）→ 杭州",
+    "groupSize": 2,
+    "primaryDestinationName": "贵阳 · 大理 · 泸沽湖 · 丽江"
+  },
+  "flightJourneys": [
+    {
+      "id": "journey-1",
+      "title": "杭州 → 贵阳",
+      "status": "booked",
+      "date": "2026-09-25",
+      "flightIds": [
+        "flight-1"
+      ]
+    },
+    {
+      "id": "journey-2",
+      "title": "贵阳 → 大理",
+      "status": "booked",
+      "date": "2026-09-28",
+      "flightIds": [
+        "flight-2"
+      ]
+    },
+    {
+      "id": "journey-3",
+      "title": "丽江 → 重庆",
+      "status": "booked",
+      "date": "2026-10-03",
+      "flightIds": [
+        "flight-3"
+      ]
+    },
+    {
+      "id": "journey-4",
+      "title": "重庆 → 杭州",
+      "status": "booked",
+      "date": "2026-10-07",
+      "flightIds": [
+        "flight-4"
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "id": "flight-1",
+      "journeyId": "journey-1",
+      "sequence": 1,
+      "status": "booked",
+      "airline": {
+        "name": "南方航空",
+        "nameZh": "南方航空"
+      },
+      "flightNumber": "CZ6382",
+      "departure": {
+        "airportCode": "HGH",
+        "city": "杭州",
+        "airportName": "杭州萧山",
+        "terminal": "T4",
+        "date": "2026-09-25",
+        "time": "17:55",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "KWE",
+        "city": "贵阳",
+        "airportName": "贵阳龙洞堡",
+        "terminal": "T3",
+        "date": "2026-09-25",
+        "time": "20:35",
+        "utcOffset": "+08:00"
+      },
+      "notes": [
+        "时刻及航站楼来自用户已订行程截图，临行以承运人通知为准。"
+      ]
+    },
+    {
+      "id": "flight-2",
+      "journeyId": "journey-2",
+      "sequence": 1,
+      "status": "booked",
+      "airline": {
+        "name": "祥鹏航空",
+        "nameZh": "祥鹏航空"
+      },
+      "flightNumber": "8L9782",
+      "departure": {
+        "airportCode": "KWE",
+        "city": "贵阳",
+        "airportName": "贵阳龙洞堡",
+        "terminal": "T2",
+        "date": "2026-09-28",
+        "time": "16:30",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "DLU",
+        "city": "大理",
+        "airportName": "大理凤仪",
+        "terminal": "",
+        "date": "2026-09-28",
+        "time": "18:05",
+        "utcOffset": "+08:00"
+      },
+      "notes": [
+        "时刻及航站楼来自用户已订行程截图，临行以承运人通知为准。"
+      ]
+    },
+    {
+      "id": "flight-3",
+      "journeyId": "journey-3",
+      "sequence": 1,
+      "status": "booked",
+      "airline": {
+        "name": "四川航空",
+        "nameZh": "四川航空"
+      },
+      "flightNumber": "3U8012",
+      "departure": {
+        "airportCode": "LJG",
+        "city": "丽江",
+        "airportName": "丽江三义",
+        "terminal": "T1",
+        "date": "2026-10-03",
+        "time": "23:35",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "CKG",
+        "city": "重庆",
+        "airportName": "重庆江北",
+        "terminal": "T3",
+        "date": "2026-10-04",
+        "time": "01:20",
+        "utcOffset": "+08:00"
+      },
+      "notes": [
+        "时刻及航站楼来自用户已订行程截图，临行以承运人通知为准。"
+      ]
+    },
+    {
+      "id": "flight-4",
+      "journeyId": "journey-4",
+      "sequence": 1,
+      "status": "booked",
+      "airline": {
+        "name": "四川航空",
+        "nameZh": "四川航空"
+      },
+      "flightNumber": "3U3180",
+      "departure": {
+        "airportCode": "CKG",
+        "city": "重庆",
+        "airportName": "重庆江北",
+        "terminal": "T3",
+        "date": "2026-10-07",
+        "time": "20:15",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "HGH",
+        "city": "杭州",
+        "airportName": "杭州萧山",
+        "terminal": "T4",
+        "date": "2026-10-07",
+        "time": "22:20",
+        "utcOffset": "+08:00"
+      },
+      "notes": [
+        "时刻及航站楼来自用户已订行程截图，临行以承运人通知为准。"
+      ]
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "hotel-guiyang",
+      "name": "全季贵阳大十字中山西路地铁站酒店",
+      "city": "贵阳",
+      "checkIn": "2026-09-25",
+      "checkOut": "2026-09-28",
+      "nights": 3,
+      "roomType": "大床房",
+      "roomCount": 1,
+      "status": "booked",
+      "address": "贵州省贵阳市云岩区瑞金中路41号",
+      "price": {
+        "currency": "CNY",
+        "total": 1154.99
+      },
+      "notes": [
+        "金额为截图所示订单金额；每笔均为 1 间房。"
+      ],
+      "navigation": {
+        "query": "全季酒店 贵阳市云岩区瑞金中路41号",
+        "url": "https://uri.amap.com/search?keyword=%E5%85%A8%E5%AD%A3%E9%85%92%E5%BA%97+%E8%B4%B5%E9%98%B3%E5%B8%82%E4%BA%91%E5%B2%A9%E5%8C%BA%E7%91%9E%E9%87%91%E4%B8%AD%E8%B7%AF41%E5%8F%B7&view=map&callnative=1&src=travelplan",
+        "provider": "amap"
+      },
+      "addressSourceUrl": "https://hotels.ctrip.com/hotels/122017570.html"
+    },
+    {
+      "id": "hotel-dali-sea",
+      "name": "全季大理洱海寰球时代酒店",
+      "city": "大理",
+      "checkIn": "2026-09-28",
+      "checkOut": "2026-09-30",
+      "nights": 2,
+      "roomType": "海景高级大床房",
+      "roomCount": 1,
+      "status": "booked",
+      "address": "云南省大理市海东镇满江村机场路洱海寰球时代大厦2栋1层",
+      "price": {
+        "currency": "CNY",
+        "total": 1054.12
+      },
+      "notes": [
+        "金额为截图所示订单金额；每笔均为 1 间房。"
+      ],
+      "navigation": {
+        "query": "全季酒店 大理洱海寰球时代店 大理市机场路洱海寰球时代大厦2栋",
+        "url": "https://uri.amap.com/marker?position=100.276686%2C25.63128&name=%E5%85%A8%E5%AD%A3%E5%A4%A7%E7%90%86%E6%B4%B1%E6%B5%B7%E5%AF%B0%E7%90%83%E6%97%B6%E4%BB%A3%E9%85%92%E5%BA%97&coordinate=gaode&callnative=1&src=travelplan",
+        "provider": "amap",
+        "coordinates": {
+          "lng": 100.276686,
+          "lat": 25.63128,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/125761754.html",
+        "sourceCoordinates": {
+          "lat": 25.637085,
+          "lng": 100.283225,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      },
+      "addressSourceUrl": "https://hotels.ctrip.com/hotels/125761754.html"
+    },
+    {
+      "id": "hotel-dali-oldtown",
+      "name": "大理古城城际酒店",
+      "city": "大理",
+      "checkIn": "2026-09-30",
+      "checkOut": "2026-10-01",
+      "nights": 1,
+      "roomType": "城际景观房-大床",
+      "roomCount": 1,
+      "status": "booked",
+      "address": "云南省大理市大理古城大丽线诺客来咖啡东10米",
+      "price": {
+        "currency": "CNY",
+        "total": 514.65
+      },
+      "notes": [
+        "金额为截图所示订单金额；每笔均为 1 间房。"
+      ],
+      "navigation": {
+        "query": "大理古城城际酒店 大理市大理古城大丽线诺客来咖啡东10米",
+        "url": "https://uri.amap.com/marker?position=100.17343%2C25.698448&name=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E5%9F%8E%E9%99%85%E9%85%92%E5%BA%97&coordinate=gaode&callnative=1&src=travelplan",
+        "provider": "amap",
+        "coordinates": {
+          "lng": 100.17343,
+          "lat": 25.698448,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/133214522.html",
+        "sourceCoordinates": {
+          "lat": 25.704506,
+          "lng": 100.179932,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      },
+      "addressSourceUrl": "https://hotels.ctrip.com/hotels/133214522.html"
+    },
+    {
+      "id": "hotel-lijiang",
+      "name": "桔子丽江古城香格里大道酒店",
+      "city": "丽江",
+      "checkIn": "2026-10-02",
+      "checkOut": "2026-10-03",
+      "nights": 1,
+      "roomType": "行政大床房",
+      "roomCount": 1,
+      "status": "booked",
+      "address": "云南省丽江市古城区西安街道福慧社区玉兴段26号1–7层",
+      "price": {
+        "currency": "CNY",
+        "total": 565.33
+      },
+      "notes": [
+        "金额为截图所示订单金额；每笔均为 1 间房。"
+      ],
+      "navigation": {
+        "query": "桔子酒店 丽江古城香格里大道店 丽江市古城区玉兴段26号",
+        "url": "https://uri.amap.com/marker?position=100.220327%2C26.880785&name=%E6%A1%94%E5%AD%90%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E%E9%A6%99%E6%A0%BC%E9%87%8C%E5%A4%A7%E9%81%93%E9%85%92%E5%BA%97&coordinate=gaode&callnative=1&src=travelplan",
+        "provider": "amap",
+        "coordinates": {
+          "lng": 100.220327,
+          "lat": 26.880785,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/116872500.html",
+        "sourceCoordinates": {
+          "lat": 26.886932,
+          "lng": 100.226789,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      },
+      "addressSourceUrl": "https://m.huazhu.com/Hotel/Detail/9025297"
+    },
+    {
+      "id": "hotel-lugu-pending",
+      "name": "泸沽湖凿见酒店（大落水村店）",
+      "city": "泸沽湖",
+      "checkIn": "2026-10-01",
+      "checkOut": "2026-10-02",
+      "nights": 1,
+      "status": "tentative",
+      "address": "云南宁蒗永宁镇落水村委会大落水下村18号",
+      "addressSourceUrl": "https://hotels.ctrip.com/hotels/125782801.html",
+      "navigation": {
+        "provider": "amap",
+        "query": "泸沽湖凿见酒店（大落水村店）",
+        "coordinates": {
+          "lng": 100.768117,
+          "lat": 27.680982,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/125782801.html",
+        "url": "https://uri.amap.com/marker?position=100.768117%2C27.680982&name=%E6%B3%B8%E6%B2%BD%E6%B9%96%E5%87%BF%E8%A7%81%E9%85%92%E5%BA%97%EF%BC%88%E5%A4%A7%E8%90%BD%E6%B0%B4%E6%9D%91%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=travelplan",
+        "sourceCoordinates": {
+          "lat": 27.686947,
+          "lng": 100.774608,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      }
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": {
+      "id": "dali-rental",
+      "status": "planned",
+      "company": "待补充",
+      "rentalPeriodDays": 2,
+      "durationHours": 48,
+      "vehicle": {
+        "example": "车型待补充",
+        "class": "待补充"
+      },
+      "unlimitedKilometers": null,
+      "price": {
+        "currency": "CNY",
+        "payAtCounter": null
+      },
+      "insurance": [],
+      "pickup": {
+        "date": "2026-09-28",
+        "time": "19:30",
+        "location": "大理凤仪机场",
+        "address": "机场取车，具体门店/交接点待补充",
+        "utcOffset": "+08:00"
+      },
+      "dropoff": {
+        "date": "2026-09-30",
+        "time": "19:30",
+        "timeZoneLabel": "北京时间",
+        "location": "大理古城东门",
+        "vehicleReturnPoint": "大理古城东门，具体交接点待补充",
+        "deadlineWarning": "计划 19:30 还车；建议提前到场办理交接。",
+        "recommendedArrivalTime": "19:00",
+        "utcOffset": "+08:00"
+      },
+      "notes": [
+        "租车计划已确认，租车公司、车型、费用、保险及订单状态待补充。",
+        "取还车间隔为 48 小时；计费天数以租车订单为准。"
+      ]
+    },
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": [
+      {
+        "id": "rail-d1733",
+        "type": "train",
+        "number": "D1733",
+        "date": "2026-09-27",
+        "departure": {
+          "station": "贵阳站",
+          "time": "10:18"
+        },
+        "arrival": {
+          "station": "荔波站",
+          "time": "11:40"
+        },
+        "status": "booked",
+        "seat": "二等座 07车09A、09B"
+      },
+      {
+        "id": "rail-g8522",
+        "type": "train",
+        "number": "G8522",
+        "date": "2026-09-27",
+        "departure": {
+          "station": "荔波站",
+          "time": "20:12"
+        },
+        "arrival": {
+          "station": "贵阳站",
+          "time": "21:25"
+        },
+        "status": "booked",
+        "seat": "二等座 06车02A、02B"
+      },
+      {
+        "id": "bus-dali-lugu",
+        "type": "bus",
+        "date": "2026-10-01",
+        "from": "大理古城东门附近",
+        "to": "泸沽湖",
+        "status": "planned",
+        "notes": [
+          "用户确认上午出发；班次、具体集合点、到达点、车票状态待补充。"
+        ]
+      },
+      {
+        "id": "bus-lugu-lijiang",
+        "type": "bus",
+        "date": "2026-10-02",
+        "from": "泸沽湖",
+        "to": "丽江",
+        "status": "planned",
+        "notes": [
+          "计划下午回到丽江；发车时间和交通订单待确认，游览须围绕回程时间安排。"
+        ]
+      }
+    ]
+  },
+  "days": [
+    {
+      "id": "day-1",
+      "day": 1,
+      "date": "2026-09-25",
+      "title": "杭州出发 · 夜抵贵阳",
+      "locations": [
+        "杭州",
+        "贵阳"
+      ],
+      "schedule": [
+        {
+          "id": "d1-1",
+          "time": "出发前",
+          "type": "note",
+          "text": "全程 2 人。航班/火车时间来自已订截图；标“建议”的游览时间可按路况调整。"
+        },
+        {
+          "id": "d1-2",
+          "time": "建议15:30",
+          "type": "transfer",
+          "text": "抵达杭州萧山机场 T4，办理值机和行李托运。"
+        },
+        {
+          "id": "d1-3",
+          "time": "17:55–20:35",
+          "type": "flight",
+          "text": "已订 CZ6382 南方航空｜杭州萧山 T4 → 贵阳龙洞堡 T3。",
+          "placeId": "kwe"
+        },
+        {
+          "id": "d1-4",
+          "time": "晚上 / 抵达后",
+          "type": "check-in",
+          "text": "取行李后前往酒店办理入住。9/25—9/28，共3晚；大床房1间。",
+          "placeId": "hotel-guiyang"
+        },
+        {
+          "id": "d1-6",
+          "time": "入住后",
+          "type": "rest",
+          "text": "晚餐后休息，为次日黄果树行程留体力。"
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "day": 2,
+      "date": "2026-09-26",
+      "title": "黄果树 · 瀑布与溪谷",
+      "locations": [
+        "贵阳",
+        "黄果树"
+      ],
+      "schedule": [
+        {
+          "id": "d2-3",
+          "time": "早上出发 / 上午",
+          "type": "attraction",
+          "text": "贵阳出发前往黄果树，抵达后游览大瀑布，预留步行和排队时间。景区内使用景交车；贵阳往返交通及班次待确认。水帘洞开放情况以当日公告为准。",
+          "placeId": "huangguoshu",
+          "ticketIds": [
+            "ticket-hgs"
+          ]
+        },
+        {
+          "id": "d2-4",
+          "time": "中午",
+          "type": "restaurant",
+          "text": "在景区用午餐、休息；具体餐厅现场选择。"
+        },
+        {
+          "id": "d2-5",
+          "time": "下午",
+          "type": "attraction",
+          "text": "建议天星桥游览，乘景交车衔接；如排队较久则缩短游览，不强塞更多景点。",
+          "placeId": "tianxingqiao"
+        },
+        {
+          "id": "d2-6",
+          "time": "傍晚",
+          "type": "return",
+          "text": "按已确认的返程交通时间离开景区，返回贵阳。往返车票未提供，不写死末班车时间。",
+          "placeId": "guiyang"
+        },
+        {
+          "id": "d2-7",
+          "time": "晚上",
+          "type": "rest",
+          "text": "续住贵阳全季，晚餐后休息。"
+        }
+      ]
+    },
+    {
+      "id": "day-3",
+      "day": 3,
+      "date": "2026-09-27",
+      "title": "荔波小七孔 · 当天往返",
+      "locations": [
+        "贵阳",
+        "荔波",
+        "小七孔"
+      ],
+      "schedule": [
+        {
+          "id": "d3-1",
+          "time": "建议09:15",
+          "type": "transfer",
+          "text": "抵达贵阳站候车，注意是贵阳站，不是贵阳北站。",
+          "placeId": "guiyang-station"
+        },
+        {
+          "id": "d3-2",
+          "time": "10:18–11:40",
+          "type": "transfer",
+          "text": "已订 D1733｜贵阳站 → 荔波站。二等座 07车09A、09B。",
+          "placeId": "libo-station"
+        },
+        {
+          "id": "d3-4",
+          "time": "抵达后至约17:30",
+          "type": "attraction",
+          "text": "从荔波站乘景区直通车前往小七孔东门，简餐后入园。游览古桥、瀑布溪流及卧龙潭等核心区域，结合观光车和体力调整路线；不叠加大七孔。",
+          "placeId": "xiaoqikong",
+          "ticketIds": [
+            "ticket-xqk"
+          ]
+        },
+        {
+          "id": "d3-5",
+          "time": "建议17:30起返程",
+          "type": "return",
+          "text": "结束游览，预留出园、等车和晚餐时间，争取19:15前抵达荔波站候车；交通拥堵时提前出园。",
+          "placeId": "libo-station"
+        },
+        {
+          "id": "d3-7",
+          "time": "20:12–21:25",
+          "type": "transfer",
+          "text": "已订 G8522｜荔波站 → 贵阳站。二等座 06车02A、02B。",
+          "placeId": "guiyang-station"
+        },
+        {
+          "id": "d3-8",
+          "time": "晚上",
+          "type": "rest",
+          "text": "返回贵阳全季续住。"
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "day": 4,
+      "date": "2026-09-28",
+      "title": "黔灵山半日 · 飞往大理取车",
+      "locations": [
+        "贵阳",
+        "大理"
+      ],
+      "schedule": [
+        {
+          "id": "d4-1",
+          "time": "建议08:00–11:00",
+          "type": "attraction",
+          "text": "黔灵山公园半日游；以轻松步行为主，按体力选择园内路线。",
+          "placeId": "qianlingshan"
+        },
+        {
+          "id": "d4-2",
+          "time": "建议11:30",
+          "type": "check-out",
+          "text": "回酒店取行李、退房，用午餐。",
+          "placeId": "hotel-guiyang"
+        },
+        {
+          "id": "d4-3",
+          "time": "建议13:00起",
+          "type": "transfer",
+          "text": "出发前往贵阳龙洞堡机场 T2，目标约14:00抵达；依实时路况提前。",
+          "placeId": "kwe"
+        },
+        {
+          "id": "d4-4",
+          "time": "16:30–18:05",
+          "type": "flight",
+          "text": "已订 8L9782 祥鹏航空｜贵阳龙洞堡 T2 → 大理凤仪机场。",
+          "placeId": "dlu",
+          "navigation": false
+        },
+        {
+          "id": "d4-5",
+          "time": "19:30",
+          "type": "drive",
+          "text": "计划在大理机场取车。租车公司、车型、费用、保险、具体门店及订单状态待补充；9/30 19:30 在大理古城东门还车。",
+          "placeId": "dlu"
+        },
+        {
+          "id": "d4-6",
+          "time": "取车后",
+          "type": "check-in",
+          "text": "驾车前往酒店入住。9/28—9/30，共2晚；海景高级大床房1间。",
+          "placeId": "hotel-dali-sea"
+        },
+        {
+          "id": "d4-7",
+          "time": "晚上",
+          "type": "rest",
+          "text": "酒店附近晚餐、休息，不安排夜间环湖。"
+        }
+      ]
+    },
+    {
+      "id": "day-5",
+      "day": 5,
+      "date": "2026-09-29",
+      "title": "海东自驾 · 文笔到双廊",
+      "locations": [
+        "大理",
+        "洱海东岸"
+      ],
+      "schedule": [
+        {
+          "id": "d5-2",
+          "time": "建议09:00出发 / 上午",
+          "type": "attraction",
+          "text": "早餐后驾车前往文笔村，看洱海、散步，车辆停在合法停车区域。",
+          "placeId": "wenbi"
+        },
+        {
+          "id": "d5-3",
+          "time": "中午",
+          "type": "attraction",
+          "text": "沿东岸前往小普陀周边，停留看湖并用午餐。",
+          "placeId": "xiaoputuo"
+        },
+        {
+          "id": "d5-4",
+          "time": "下午",
+          "type": "attraction",
+          "text": "双廊古镇散步、找一处临湖位置休息；付费景点按现场意愿选择。",
+          "placeId": "shuanglang"
+        },
+        {
+          "id": "d5-5",
+          "time": "建议17:00起",
+          "type": "return",
+          "text": "返回酒店续住，晚餐后休息。按实时导航预留返程时间。",
+          "placeId": "hotel-dali-sea"
+        }
+      ]
+    },
+    {
+      "id": "day-6",
+      "day": 6,
+      "date": "2026-09-30",
+      "title": "海西慢游 · 古城换住与还车",
+      "locations": [
+        "大理",
+        "喜洲",
+        "古城"
+      ],
+      "schedule": [
+        {
+          "id": "d6-1",
+          "time": "早餐后",
+          "type": "check-out",
+          "text": "退房并带走行李。",
+          "placeId": "hotel-dali-sea"
+        },
+        {
+          "id": "d6-2",
+          "time": "上午",
+          "type": "attraction",
+          "text": "建议先游喜洲古镇，安排午餐和散步。",
+          "placeId": "xizhou"
+        },
+        {
+          "id": "d6-3",
+          "time": "下午前段",
+          "type": "walk",
+          "text": "磻溪村附近海西生态廊道选一小段步行或骑行，车辆停在外围；不将租车驶入生态廊道。",
+          "placeId": "panxi"
+        },
+        {
+          "id": "d6-4",
+          "time": "建议16:00–17:00",
+          "type": "check-in",
+          "text": "前往酒店办理入住、放下行李。9/30—10/1，1晚；城际景观大床房1间。",
+          "placeId": "hotel-dali-oldtown"
+        },
+        {
+          "id": "d6-5",
+          "time": "19:00抵达 / 19:30还车",
+          "type": "drive",
+          "text": "前往大理古城东门附近办理还车，具体门店位置待补充。9/28 19:30取车至9/30 19:30还车，共48小时。",
+          "placeId": "dali-eastgate"
+        },
+        {
+          "id": "d6-7",
+          "time": "晚上",
+          "type": "walk",
+          "text": "大理古城晚餐、散步，早点休息准备次日巴士。",
+          "placeId": "dali-oldtown"
+        }
+      ]
+    },
+    {
+      "id": "day-7",
+      "day": 7,
+      "date": "2026-10-01",
+      "title": "泸沽湖 · 下午沿湖慢游",
+      "locations": [
+        "大理",
+        "泸沽湖",
+        "里格"
+      ],
+      "schedule": [
+        {
+          "id": "d7-1",
+          "time": "早上",
+          "type": "check-out",
+          "text": "退房后带行李到大理古城东门附近乘巴士前往泸沽湖，预计下午抵达；具体班次、上下车点待补充。",
+          "placeId": "dali-eastgate",
+          "ticketIds": [
+            "ticket-lugu"
+          ]
+        },
+        {
+          "id": "d7-3",
+          "time": "下午抵达后",
+          "type": "check-in",
+          "text": "暂定入住凿见民宿，10/1—10/2共1晚；房型和订单待确认。先寄存行李，再从大落水出发沿湖游览，建议包车（未预订）。",
+          "placeId": "hotel-lugu-pending"
+        },
+        {
+          "id": "d7-4",
+          "time": "环湖第1站 · 约30分钟",
+          "type": "walk",
+          "text": "大落水出发，沿西岸前往里拜情人滩，湖边散步、拍照。",
+          "placeId": "lugu-lovers"
+        },
+        {
+          "id": "d7-6",
+          "time": "环湖第2站 · 约60分钟",
+          "type": "attraction",
+          "text": "继续前往里格半岛观景台，俯瞰半岛；有余力再下到村里散步。",
+          "placeId": "lige"
+        },
+        {
+          "id": "d7-7",
+          "time": "傍晚返回",
+          "type": "return",
+          "text": "沿西岸返回民宿，晚餐后休息。半日路线预留约3小时，包含车程、停车与游览；实际随抵达时间调整。",
+          "navigation": false
+        }
+      ],
+      "notes": [
+        "下午抵达优先走西岸精华段，不默认能完成整圈。若14:00前已安顿好、司机确认时间充足，可改走整圈：大落水 → 里拜情人滩 → 里格 → 小落水 → 四川情人滩 → 草海/走婚桥 → 蒗放 → 大落水；预留约5—6小时并减少停留，拥堵时放弃整圈。"
+      ]
+    },
+    {
+      "id": "day-8",
+      "day": 8,
+      "date": "2026-10-02",
+      "title": "早起女神山 · 下午返回丽江",
+      "locations": [
+        "泸沽湖",
+        "格姆女神山",
+        "丽江"
+      ],
+      "schedule": [
+        {
+          "id": "d8-1",
+          "time": "建议06:45起床 / 07:15出发",
+          "type": "transfer",
+          "text": "从大落水的凿见民宿出发，乘预约车辆前往格姆女神山索道入口。早餐及接车时间提前与民宿确认；行李寄存民宿或与司机确认随车。",
+          "navigation": false
+        },
+        {
+          "id": "d8-6",
+          "time": "约08:00–10:30 · 以开园为准",
+          "type": "attraction",
+          "text": "按当天首班索道时间上山，游览开放的观景台和女神洞，再原路下山。此处按索道观景安排；若排队或天气影响运行，缩短或取消上山以衔接返程。",
+          "placeId": "gemu",
+          "ticketIds": [
+            "ticket-gemu"
+          ]
+        },
+        {
+          "id": "d8-2",
+          "time": "目标11:00–12:00离开湖区",
+          "type": "transfer",
+          "text": "下山后回民宿取行李、退房，简餐后乘车回丽江。优先选择能衔接游览的直达班车或包车；目标下午抵达，车次及车程需向车方确认。若返程班车过早，应调整上山安排。",
+          "placeId": "hotel-lugu-pending"
+        },
+        {
+          "id": "d8-4",
+          "time": "下午/抵达后",
+          "type": "check-in",
+          "text": "前往酒店入住。10/2—10/3，1晚；行政大床房1间。",
+          "placeId": "hotel-lijiang"
+        },
+        {
+          "id": "d8-5",
+          "time": "晚上",
+          "type": "rest",
+          "text": "丽江市区晚餐、休息。"
+        }
+      ],
+      "notes": [
+        "当前索道页面列4—12月08:00开放，女神山景点页面列08:30，10/2首班时间需出行前确认；早起不等于能乘索道看日出。"
+      ]
+    },
+    {
+      "id": "day-9",
+      "day": 9,
+      "date": "2026-10-03",
+      "title": "玉湖村与束河 · 飞重庆回家",
+      "locations": [
+        "丽江",
+        "玉湖村",
+        "束河",
+        "重庆"
+      ],
+      "schedule": [
+        {
+          "id": "d9-1",
+          "time": "早餐后",
+          "type": "check-out",
+          "text": "退房，行李寄存酒店；当天游览交通尚未确定，建议预约往返用车以便衔接。"
+        },
+        {
+          "id": "d9-2",
+          "time": "上午",
+          "type": "attraction",
+          "text": "建议先去玉湖村，村落散步、看山景；不包含玉龙雪山登山或索道行程。",
+          "placeId": "yuhu"
+        },
+        {
+          "id": "d9-3",
+          "time": "中午至下午",
+          "type": "attraction",
+          "text": "前往束河古镇用午餐、慢逛，留出喝茶和休息时间。",
+          "placeId": "shuhe"
+        },
+        {
+          "id": "d9-4",
+          "time": "建议18:00–19:00",
+          "type": "return",
+          "text": "晚餐后回酒店取行李。根据实时路况安排前往机场。",
+          "placeId": "hotel-lijiang"
+        },
+        {
+          "id": "d9-5",
+          "time": "建议21:00前",
+          "type": "transfer",
+          "text": "抵达丽江三义机场 T1，办理值机和托运。",
+          "placeId": "ljg"
+        },
+        {
+          "id": "d9-6",
+          "time": "23:35",
+          "type": "flight",
+          "text": "已订 3U8012 四川航空，23:35 从丽江三义 T1 起飞，10/4 01:20 抵达重庆江北 T3，回家。",
+          "placeId": "ljg",
+          "navigation": false
+        }
+      ]
+    },
+    {
+      "id": "day-10",
+      "day": 10,
+      "date": "2026-10-04",
+      "title": "凌晨抵渝 · 回家",
+      "locations": [
+        "重庆"
+      ],
+      "schedule": [
+        {
+          "id": "d10-1",
+          "time": "01:20",
+          "type": "flight",
+          "text": "3U8012 抵达重庆江北机场 T3，取行李后回家。",
+          "placeId": "ckg"
+        }
+      ]
+    },
+    {
+      "id": "day-11",
+      "day": 11,
+      "date": "2026-10-05",
+      "title": "重庆 · 在家",
+      "locations": [
+        "重庆"
+      ],
+      "schedule": [
+        {
+          "id": "d11-1",
+          "time": "在家",
+          "type": "note",
+          "text": "在家，无需酒店及游览安排。"
+        }
+      ]
+    },
+    {
+      "id": "day-12",
+      "day": 12,
+      "date": "2026-10-06",
+      "title": "重庆 · 在家",
+      "locations": [
+        "重庆"
+      ],
+      "schedule": [
+        {
+          "id": "d12-1",
+          "time": "在家",
+          "type": "note",
+          "text": "在家，无需酒店及游览安排。"
+        }
+      ]
+    },
+    {
+      "id": "day-13",
+      "day": 13,
+      "date": "2026-10-07",
+      "title": "重庆出发 · 返回杭州",
+      "locations": [
+        "重庆",
+        "杭州"
+      ],
+      "schedule": [
+        {
+          "id": "d13-4",
+          "time": "20:15–22:20",
+          "type": "flight",
+          "text": "已订 3U3180 四川航空｜重庆江北 T3 → 杭州萧山 T4。",
+          "placeId": "ckg"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "kwe",
+      "name": "贵阳龙洞堡机场",
+      "nameZh": "贵阳龙洞堡机场",
+      "countryCode": "CN",
+      "type": "airport",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 贵阳龙洞堡机场",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%B4%B5%E9%98%B3%E9%BE%99%E6%B4%9E%E5%A0%A1%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "guiyang",
+      "name": "贵阳市区",
+      "nameZh": "贵阳市区",
+      "countryCode": "CN",
+      "type": "city",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 贵阳市区",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%B4%B5%E9%98%B3%E5%B8%82%E5%8C%BA&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "guiyang-station",
+      "name": "贵阳站",
+      "nameZh": "贵阳站",
+      "countryCode": "CN",
+      "type": "station",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 贵阳站",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%B4%B5%E9%98%B3%E7%AB%99&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "huangguoshu",
+      "name": "黄果树大瀑布",
+      "nameZh": "黄果树大瀑布",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 黄果树大瀑布",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E9%BB%84%E6%9E%9C%E6%A0%91%E5%A4%A7%E7%80%91%E5%B8%83&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "tianxingqiao",
+      "name": "天星桥",
+      "nameZh": "天星桥",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 天星桥",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E5%A4%A9%E6%98%9F%E6%A1%A5&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "libo-station",
+      "name": "荔波站",
+      "nameZh": "荔波站",
+      "countryCode": "CN",
+      "type": "station",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 荔波站",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%8D%94%E6%B3%A2%E7%AB%99&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "xiaoqikong",
+      "name": "荔波小七孔",
+      "nameZh": "荔波小七孔",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 荔波小七孔",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%8D%94%E6%B3%A2%E5%B0%8F%E4%B8%83%E5%AD%94&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "qianlingshan",
+      "name": "黔灵山公园",
+      "nameZh": "黔灵山公园",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "guizhou",
+      "navigation": {
+        "query": "贵州 黔灵山公园",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E9%BB%94%E7%81%B5%E5%B1%B1%E5%85%AC%E5%9B%AD&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "dlu",
+      "name": "大理凤仪机场",
+      "nameZh": "大理凤仪机场",
+      "countryCode": "CN",
+      "type": "airport",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 大理凤仪机场",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%A4%A7%E7%90%86%E5%87%A4%E4%BB%AA%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "dali-city",
+      "name": "大理市区",
+      "nameZh": "大理市区",
+      "countryCode": "CN",
+      "type": "city",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 大理市区",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%A4%A7%E7%90%86%E5%B8%82%E5%8C%BA&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "wenbi",
+      "name": "文笔村",
+      "nameZh": "文笔村",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 文笔村",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E6%96%87%E7%AC%94%E6%9D%91&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "小普陀",
+      "nameZh": "小普陀",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 小普陀",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%B0%8F%E6%99%AE%E9%99%80&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "shuanglang",
+      "name": "双廊古镇",
+      "nameZh": "双廊古镇",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 双廊古镇",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%8F%8C%E5%BB%8A%E5%8F%A4%E9%95%87&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "xizhou",
+      "name": "喜洲古镇",
+      "nameZh": "喜洲古镇",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 喜洲古镇",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%96%9C%E6%B4%B2%E5%8F%A4%E9%95%87&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "panxi",
+      "name": "磻溪村海西生态廊道",
+      "nameZh": "磻溪村海西生态廊道",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 磻溪村海西生态廊道",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E7%A3%BB%E6%BA%AA%E6%9D%91%E6%B5%B7%E8%A5%BF%E7%94%9F%E6%80%81%E5%BB%8A%E9%81%93&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "dali-oldtown",
+      "name": "大理古城",
+      "nameZh": "大理古城",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 大理古城",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "dali-eastgate",
+      "name": "大理古城东门",
+      "nameZh": "大理古城东门",
+      "countryCode": "CN",
+      "type": "transfer",
+      "mapRegionId": "dali",
+      "navigation": {
+        "query": "云南大理 大理古城东门",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E4%B8%9C%E9%97%A8&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "lugu",
+      "name": "泸沽湖",
+      "nameZh": "泸沽湖",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "lugu-lake",
+      "navigation": {
+        "query": "泸沽湖 泸沽湖",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E6%B3%B8%E6%B2%BD%E6%B9%96+%E6%B3%B8%E6%B2%BD%E6%B9%96&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "daluoshui",
+      "name": "大落水村",
+      "nameZh": "大落水村",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "lugu-lake",
+      "navigation": {
+        "query": "泸沽湖 大落水村",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E6%B3%B8%E6%B2%BD%E6%B9%96+%E5%A4%A7%E8%90%BD%E6%B0%B4%E6%9D%91&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "lijiang-city",
+      "name": "丽江市区",
+      "nameZh": "丽江市区",
+      "countryCode": "CN",
+      "type": "city",
+      "mapRegionId": "lijiang",
+      "navigation": {
+        "query": "云南丽江 丽江市区",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E4%B8%BD%E6%B1%9F+%E4%B8%BD%E6%B1%9F%E5%B8%82%E5%8C%BA&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "yuhu",
+      "name": "玉湖村",
+      "nameZh": "玉湖村",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "lijiang",
+      "navigation": {
+        "query": "云南丽江 玉湖村",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E4%B8%BD%E6%B1%9F+%E7%8E%89%E6%B9%96%E6%9D%91&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "shuhe",
+      "name": "束河古镇",
+      "nameZh": "束河古镇",
+      "countryCode": "CN",
+      "type": "attraction",
+      "mapRegionId": "lijiang",
+      "navigation": {
+        "query": "云南丽江 束河古镇",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E4%B8%BD%E6%B1%9F+%E6%9D%9F%E6%B2%B3%E5%8F%A4%E9%95%87&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "ljg",
+      "name": "丽江三义机场",
+      "nameZh": "丽江三义机场",
+      "countryCode": "CN",
+      "type": "airport",
+      "mapRegionId": "lijiang",
+      "navigation": {
+        "query": "云南丽江 丽江三义机场",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E4%B8%BD%E6%B1%9F+%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "ckg",
+      "name": "重庆江北机场",
+      "nameZh": "重庆江北机场",
+      "countryCode": "CN",
+      "type": "airport",
+      "mapRegionId": "chongqing",
+      "navigation": {
+        "query": "重庆 重庆江北机场",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E9%87%8D%E5%BA%86+%E9%87%8D%E5%BA%86%E6%B1%9F%E5%8C%97%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "hotel-guiyang",
+      "name": "全季贵阳大十字中山西路地铁站酒店",
+      "nameZh": "全季贵阳大十字中山西路地铁站酒店",
+      "type": "hotel",
+      "countryCode": "CN",
+      "cityOrArea": "贵阳",
+      "address": "贵州省贵阳市云岩区瑞金中路41号",
+      "navigation": {
+        "query": "全季酒店 贵阳市云岩区瑞金中路41号",
+        "url": "https://uri.amap.com/search?keyword=%E5%85%A8%E5%AD%A3%E9%85%92%E5%BA%97+%E8%B4%B5%E9%98%B3%E5%B8%82%E4%BA%91%E5%B2%A9%E5%8C%BA%E7%91%9E%E9%87%91%E4%B8%AD%E8%B7%AF41%E5%8F%B7&view=map&callnative=1&src=travelplan",
+        "provider": "amap"
+      }
+    },
+    {
+      "id": "hotel-dali-sea",
+      "name": "全季大理洱海寰球时代酒店",
+      "nameZh": "全季大理洱海寰球时代酒店",
+      "type": "hotel",
+      "countryCode": "CN",
+      "cityOrArea": "大理",
+      "address": "云南省大理市海东镇满江村机场路洱海寰球时代大厦2栋1层",
+      "navigation": {
+        "query": "全季酒店 大理洱海寰球时代店 大理市机场路洱海寰球时代大厦2栋",
+        "url": "https://uri.amap.com/marker?position=100.276686%2C25.63128&name=%E5%85%A8%E5%AD%A3%E5%A4%A7%E7%90%86%E6%B4%B1%E6%B5%B7%E5%AF%B0%E7%90%83%E6%97%B6%E4%BB%A3%E9%85%92%E5%BA%97&coordinate=gaode&callnative=1&src=travelplan",
+        "provider": "amap",
+        "coordinates": {
+          "lng": 100.276686,
+          "lat": 25.63128,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/125761754.html",
+        "sourceCoordinates": {
+          "lat": 25.637085,
+          "lng": 100.283225,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      }
+    },
+    {
+      "id": "hotel-dali-oldtown",
+      "name": "大理古城城际酒店",
+      "nameZh": "大理古城城际酒店",
+      "type": "hotel",
+      "countryCode": "CN",
+      "cityOrArea": "大理",
+      "address": "云南省大理市大理古城大丽线诺客来咖啡东10米",
+      "navigation": {
+        "query": "大理古城城际酒店 大理市大理古城大丽线诺客来咖啡东10米",
+        "url": "https://uri.amap.com/marker?position=100.17343%2C25.698448&name=%E5%A4%A7%E7%90%86%E5%8F%A4%E5%9F%8E%E5%9F%8E%E9%99%85%E9%85%92%E5%BA%97&coordinate=gaode&callnative=1&src=travelplan",
+        "provider": "amap",
+        "coordinates": {
+          "lng": 100.17343,
+          "lat": 25.698448,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/133214522.html",
+        "sourceCoordinates": {
+          "lat": 25.704506,
+          "lng": 100.179932,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      }
+    },
+    {
+      "id": "hotel-lijiang",
+      "name": "桔子丽江古城香格里大道酒店",
+      "nameZh": "桔子丽江古城香格里大道酒店",
+      "type": "hotel",
+      "countryCode": "CN",
+      "cityOrArea": "丽江",
+      "address": "云南省丽江市古城区西安街道福慧社区玉兴段26号1–7层",
+      "navigation": {
+        "query": "桔子酒店 丽江古城香格里大道店 丽江市古城区玉兴段26号",
+        "url": "https://uri.amap.com/marker?position=100.220327%2C26.880785&name=%E6%A1%94%E5%AD%90%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E%E9%A6%99%E6%A0%BC%E9%87%8C%E5%A4%A7%E9%81%93%E9%85%92%E5%BA%97&coordinate=gaode&callnative=1&src=travelplan",
+        "provider": "amap",
+        "coordinates": {
+          "lng": 100.220327,
+          "lat": 26.880785,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/116872500.html",
+        "sourceCoordinates": {
+          "lat": 26.886932,
+          "lng": 100.226789,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      }
+    },
+    {
+      "id": "erhai",
+      "name": "洱海",
+      "nameZh": "洱海",
+      "countryCode": "CN",
+      "mapRegionId": "dali",
+      "type": "lake",
+      "geo": {
+        "lat": 25.778,
+        "lng": 100.192
+      },
+      "overview": true,
+      "days": [
+        4,
+        5,
+        6
+      ],
+      "cityOrArea": "大理",
+      "navigation": {
+        "query": "云南大理 洱海",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E6%B4%B1%E6%B5%B7&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "lugu-lovers",
+      "name": "里拜情人滩",
+      "nameZh": "里拜情人滩",
+      "countryCode": "CN",
+      "mapRegionId": "lugu-lake",
+      "type": "attraction",
+      "geo": {
+        "lat": 27.703251,
+        "lng": 100.750042
+      },
+      "overview": true,
+      "cityOrArea": "泸沽湖",
+      "navigation": {
+        "query": "泸沽湖 里拜情人滩",
+        "url": "https://www.amap.com/place/B03420OVL2",
+        "provider": "amap"
+      }
+    },
+    {
+      "id": "lige",
+      "name": "里格半岛观景台",
+      "nameZh": "里格半岛观景台",
+      "countryCode": "CN",
+      "mapRegionId": "lugu-lake",
+      "type": "attraction",
+      "geo": {
+        "lat": 27.727,
+        "lng": 100.751
+      },
+      "overview": true,
+      "cityOrArea": "泸沽湖",
+      "navigation": {
+        "query": "泸沽湖 里格半岛观景台",
+        "provider": "amap",
+        "url": "https://uri.amap.com/search?keyword=%E6%B3%B8%E6%B2%BD%E6%B9%96+%E9%87%8C%E6%A0%BC%E5%8D%8A%E5%B2%9B%E8%A7%82%E6%99%AF%E5%8F%B0&view=map&callnative=1&src=travelplan"
+      }
+    },
+    {
+      "id": "gemu",
+      "name": "格姆女神山索道",
+      "nameZh": "格姆女神山索道",
+      "countryCode": "CN",
+      "mapRegionId": "lugu-lake",
+      "type": "attraction",
+      "geo": {
+        "lat": 27.737447,
+        "lng": 100.759798
+      },
+      "overview": true,
+      "cityOrArea": "泸沽湖",
+      "navigation": {
+        "query": "泸沽湖 格姆女神山索道",
+        "url": "https://www.amap.com/place/B037814E3R",
+        "provider": "amap"
+      }
+    },
+    {
+      "id": "hotel-lugu-pending",
+      "name": "泸沽湖凿见酒店（大落水村店）",
+      "nameZh": "泸沽湖凿见酒店（大落水村店）",
+      "countryCode": "CN",
+      "cityOrArea": "泸沽湖",
+      "type": "hotel",
+      "address": "云南宁蒗永宁镇落水村委会大落水下村18号",
+      "navigation": {
+        "provider": "amap",
+        "query": "泸沽湖凿见酒店（大落水村店）",
+        "coordinates": {
+          "lng": 100.768117,
+          "lat": 27.680982,
+          "system": "gcj02"
+        },
+        "coordinateSourceUrl": "https://hotels.ctrip.com/hotels/125782801.html",
+        "url": "https://uri.amap.com/marker?position=100.768117%2C27.680982&name=%E6%B3%B8%E6%B2%BD%E6%B9%96%E5%87%BF%E8%A7%81%E9%85%92%E5%BA%97%EF%BC%88%E5%A4%A7%E8%90%BD%E6%B0%B4%E6%9D%91%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=travelplan",
+        "sourceCoordinates": {
+          "lat": 27.686947,
+          "lng": 100.774608,
+          "system": "bd09ll"
+        },
+        "coordinateConversion": "BD-09 to GCJ-02; retains original source coordinates"
+      }
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": [
+      {
+        "id": "ticket-hgs",
+        "day": 2,
+        "dayId": "day-2",
+        "name": "黄果树景区门票",
+        "requirement": "advance-required",
+        "status": "pending",
+        "date": "2026-09-26",
+        "guidance": [
+          "9/23预约9/26两人门票（提前三天），已设置9/23 09:00提醒。景交车购票及包含项目待确认；放票安排以景区公告为准。"
+        ]
+      },
+      {
+        "id": "ticket-xqk",
+        "day": 3,
+        "dayId": "day-3",
+        "name": "小七孔景区门票",
+        "requirement": "门票及景区观光车购买状态待确认；未提供订单或PDF。",
+        "status": "pending",
+        "date": "2026-09-27"
+      },
+      {
+        "id": "ticket-lugu",
+        "day": 7,
+        "dayId": "day-7",
+        "name": "泸沽湖景区门票",
+        "requirement": "购买状态待确认；巴士是否包含门票以订单为准。",
+        "status": "pending",
+        "date": "2026-10-01"
+      },
+      {
+        "id": "ticket-gemu",
+        "day": 8,
+        "dayId": "day-8",
+        "name": "格姆女神山索道",
+        "requirement": "needs-confirmation",
+        "status": "pending",
+        "date": "2026-10-02",
+        "guidance": [
+          "索道票购买状态待确认；开放时间、票种及停运通知以当日景区公告为准。"
+        ],
+        "sourceUrl": "https://you.ctrip.com/sight/ninglang2169/5066888.html"
+      }
+    ]
+  },
+  "preTrip": {
+    "packingItems": [
+      {
+        "id": "todo-hgs-20260923",
+        "text": "9月23日预约9月26日黄果树景区门票（2人，提前三天；门票未购）",
+        "completed": false,
+        "dueDate": "2026-09-23"
+      }
+    ],
+    "preparationsExplicitlyMentioned": [
+      "提前三天预约黄果树门票：2026-09-23预约2026-09-26，2人。"
+    ],
+    "missingNote": "只记录你明确提出的预约提醒；其他事项可自行添加。"
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [
+    "泸沽湖10/1—10/2酒店名称、地址及订单待补充。",
+    "大理租车公司、车型、费用、保险、具体取还车门店及订单状态待补充。",
+    "黄果树景交车按景区内交通理解，贵阳往返景区交通待确认；9/23预约为用户要求的提醒日期，不是已核实的放票规则。",
+    "10/1大理古城东门附近至泸沽湖巴士的班次、集合点及车票状态待补充。",
+    "10/2目标下午回到丽江，回程发车时间须据实际班次落实。",
+    "四家已订酒店及暂定的泸沽湖凿见酒店均已补充地址和独立定位链接。路线示意图不用于精确导航。",
+    "小七孔、泸沽湖门票状态待确认。"
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "places": [
+      {
+        "id": "kwe",
+        "name": "贵阳龙洞堡机场",
+        "nameZh": "贵阳龙洞堡机场",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "airport",
+        "geo": {
+          "lat": 26.538,
+          "lng": 106.801
+        }
+      },
+      {
+        "id": "guiyang",
+        "name": "贵阳市区",
+        "nameZh": "贵阳市区",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "city",
+        "geo": {
+          "lat": 26.579,
+          "lng": 106.713
+        }
+      },
+      {
+        "id": "guiyang-station",
+        "name": "贵阳站",
+        "nameZh": "贵阳站",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "station",
+        "geo": {
+          "lat": 26.557,
+          "lng": 106.7
+        }
+      },
+      {
+        "id": "huangguoshu",
+        "name": "黄果树大瀑布",
+        "nameZh": "黄果树大瀑布",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.992,
+          "lng": 105.668
+        }
+      },
+      {
+        "id": "tianxingqiao",
+        "name": "天星桥",
+        "nameZh": "天星桥",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.956,
+          "lng": 105.682
+        }
+      },
+      {
+        "id": "libo-station",
+        "name": "荔波站",
+        "nameZh": "荔波站",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "station",
+        "geo": {
+          "lat": 25.341,
+          "lng": 107.898
+        }
+      },
+      {
+        "id": "xiaoqikong",
+        "name": "荔波小七孔",
+        "nameZh": "荔波小七孔",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.258,
+          "lng": 107.742
+        }
+      },
+      {
+        "id": "qianlingshan",
+        "name": "黔灵山公园",
+        "nameZh": "黔灵山公园",
+        "countryCode": "CN",
+        "mapRegionId": "guizhou",
+        "type": "attraction",
+        "geo": {
+          "lat": 26.608,
+          "lng": 106.688
+        }
+      },
+      {
+        "id": "dlu",
+        "name": "大理凤仪机场",
+        "nameZh": "大理凤仪机场",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "airport",
+        "geo": {
+          "lat": 25.649,
+          "lng": 100.319
+        }
+      },
+      {
+        "id": "dali-city",
+        "name": "大理市区",
+        "nameZh": "大理市区",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "city",
+        "geo": {
+          "lat": 25.599,
+          "lng": 100.258
+        }
+      },
+      {
+        "id": "wenbi",
+        "name": "文笔村",
+        "nameZh": "文笔村",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.759,
+          "lng": 100.236
+        }
+      },
+      {
+        "id": "xiaoputuo",
+        "name": "小普陀",
+        "nameZh": "小普陀",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.808,
+          "lng": 100.227
+        }
+      },
+      {
+        "id": "shuanglang",
+        "name": "双廊古镇",
+        "nameZh": "双廊古镇",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.913,
+          "lng": 100.191
+        }
+      },
+      {
+        "id": "xizhou",
+        "name": "喜洲古镇",
+        "nameZh": "喜洲古镇",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.852,
+          "lng": 100.133
+        }
+      },
+      {
+        "id": "panxi",
+        "name": "磻溪村海西生态廊道",
+        "nameZh": "磻溪村海西生态廊道",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.797,
+          "lng": 100.141
+        }
+      },
+      {
+        "id": "dali-oldtown",
+        "name": "大理古城",
+        "nameZh": "大理古城",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "attraction",
+        "geo": {
+          "lat": 25.695,
+          "lng": 100.164
+        }
+      },
+      {
+        "id": "dali-eastgate",
+        "name": "大理古城东门",
+        "nameZh": "大理古城东门",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "transfer",
+        "geo": {
+          "lat": 25.699,
+          "lng": 100.174
+        }
+      },
+      {
+        "id": "lugu",
+        "name": "泸沽湖",
+        "nameZh": "泸沽湖",
+        "countryCode": "CN",
+        "mapRegionId": "lugu-lake",
+        "type": "attraction",
+        "geo": {
+          "lat": 27.705,
+          "lng": 100.784
+        }
+      },
+      {
+        "id": "daluoshui",
+        "name": "大落水村",
+        "nameZh": "大落水村",
+        "countryCode": "CN",
+        "mapRegionId": "lugu-lake",
+        "type": "attraction",
+        "geo": {
+          "lat": 27.68,
+          "lng": 100.761
+        }
+      },
+      {
+        "id": "lijiang-city",
+        "name": "丽江市区",
+        "nameZh": "丽江市区",
+        "countryCode": "CN",
+        "mapRegionId": "lijiang",
+        "type": "city",
+        "geo": {
+          "lat": 26.875,
+          "lng": 100.232
+        }
+      },
+      {
+        "id": "yuhu",
+        "name": "玉湖村",
+        "nameZh": "玉湖村",
+        "countryCode": "CN",
+        "mapRegionId": "lijiang",
+        "type": "attraction",
+        "geo": {
+          "lat": 27.004,
+          "lng": 100.21
+        }
+      },
+      {
+        "id": "shuhe",
+        "name": "束河古镇",
+        "nameZh": "束河古镇",
+        "countryCode": "CN",
+        "mapRegionId": "lijiang",
+        "type": "attraction",
+        "geo": {
+          "lat": 26.923,
+          "lng": 100.21
+        }
+      },
+      {
+        "id": "ljg",
+        "name": "丽江三义机场",
+        "nameZh": "丽江三义机场",
+        "countryCode": "CN",
+        "mapRegionId": "lijiang",
+        "type": "airport",
+        "geo": {
+          "lat": 26.68,
+          "lng": 100.246
+        }
+      },
+      {
+        "id": "erhai",
+        "name": "洱海",
+        "nameZh": "洱海",
+        "countryCode": "CN",
+        "mapRegionId": "dali",
+        "type": "lake",
+        "geo": {
+          "lat": 25.778,
+          "lng": 100.192
+        },
+        "overview": true,
+        "days": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "lugu-lovers",
+        "name": "里拜情人滩",
+        "nameZh": "里拜情人滩",
+        "countryCode": "CN",
+        "mapRegionId": "lugu-lake",
+        "type": "attraction",
+        "geo": {
+          "lat": 27.703251,
+          "lng": 100.750042
+        },
+        "overview": true
+      },
+      {
+        "id": "lige",
+        "name": "里格半岛观景台",
+        "nameZh": "里格半岛观景台",
+        "countryCode": "CN",
+        "mapRegionId": "lugu-lake",
+        "type": "attraction",
+        "geo": {
+          "lat": 27.727,
+          "lng": 100.751
+        },
+        "overview": true
+      },
+      {
+        "id": "gemu",
+        "name": "格姆女神山索道",
+        "nameZh": "格姆女神山索道",
+        "countryCode": "CN",
+        "mapRegionId": "lugu-lake",
+        "type": "attraction",
+        "geo": {
+          "lat": 27.737447,
+          "lng": 100.759798
+        },
+        "overview": true
+      }
+    ],
+    "routes": [
+      {
+        "id": "overview-day-1",
+        "day": 1,
+        "placeIds": [
+          "kwe",
+          "guiyang"
+        ]
+      },
+      {
+        "id": "overview-day-2",
+        "day": 2,
+        "placeIds": [
+          "guiyang",
+          "huangguoshu",
+          "tianxingqiao",
+          "guiyang"
+        ]
+      },
+      {
+        "id": "overview-day-3",
+        "day": 3,
+        "placeIds": [
+          "guiyang-station",
+          "libo-station",
+          "xiaoqikong",
+          "libo-station",
+          "guiyang-station"
+        ]
+      },
+      {
+        "id": "overview-day-4",
+        "day": 4,
+        "placeIds": [
+          "guiyang",
+          "qianlingshan",
+          "kwe",
+          "dlu",
+          "dali-city"
+        ]
+      },
+      {
+        "id": "overview-day-5",
+        "day": 5,
+        "placeIds": [
+          "dali-city",
+          "wenbi",
+          "xiaoputuo",
+          "shuanglang",
+          "dali-city"
+        ]
+      },
+      {
+        "id": "overview-day-6",
+        "day": 6,
+        "placeIds": [
+          "dali-city",
+          "xizhou",
+          "panxi",
+          "dali-oldtown",
+          "dali-eastgate"
+        ]
+      },
+      {
+        "id": "overview-day-7",
+        "day": 7,
+        "placeIds": [
+          "daluoshui",
+          "lugu-lovers",
+          "lige",
+          "daluoshui"
+        ]
+      },
+      {
+        "id": "overview-day-8",
+        "day": 8,
+        "placeIds": [
+          "daluoshui",
+          "gemu",
+          "daluoshui"
+        ]
+      },
+      {
+        "id": "overview-day-9",
+        "day": 9,
+        "placeIds": [
+          "lijiang-city",
+          "yuhu",
+          "shuhe",
+          "lijiang-city",
+          "ljg"
+        ]
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "id": "route-day-1",
+        "day": 1,
+        "placeIds": [
+          "kwe",
+          "guiyang"
+        ]
+      },
+      {
+        "id": "route-day-2",
+        "day": 2,
+        "placeIds": [
+          "guiyang",
+          "huangguoshu",
+          "tianxingqiao",
+          "guiyang"
+        ]
+      },
+      {
+        "id": "route-day-3",
+        "day": 3,
+        "placeIds": [
+          "guiyang-station",
+          "libo-station",
+          "xiaoqikong",
+          "libo-station",
+          "guiyang-station"
+        ]
+      },
+      {
+        "id": "route-day-4",
+        "day": 4,
+        "placeIds": [
+          "guiyang",
+          "qianlingshan",
+          "kwe",
+          "dlu",
+          "dali-city"
+        ]
+      },
+      {
+        "id": "route-day-5",
+        "day": 5,
+        "placeIds": [
+          "dali-city",
+          "wenbi",
+          "xiaoputuo",
+          "shuanglang",
+          "dali-city"
+        ]
+      },
+      {
+        "id": "route-day-6",
+        "day": 6,
+        "placeIds": [
+          "dali-city",
+          "xizhou",
+          "panxi",
+          "dali-oldtown",
+          "dali-eastgate"
+        ]
+      },
+      {
+        "id": "route-day-7",
+        "day": 7,
+        "placeIds": [
+          "daluoshui",
+          "lugu-lovers",
+          "lige",
+          "daluoshui"
+        ]
+      },
+      {
+        "id": "route-day-8",
+        "day": 8,
+        "placeIds": [
+          "daluoshui",
+          "gemu",
+          "daluoshui"
+        ]
+      },
+      {
+        "id": "route-day-9",
+        "day": 9,
+        "placeIds": [
+          "lijiang-city",
+          "yuhu",
+          "shuhe",
+          "lijiang-city",
+          "ljg"
+        ]
+      }
+    ],
+    "region": {
+      "id": "southwest",
+      "label": "西南秋日旅行",
+      "countryCode": "CN"
+    },
+    "regions": [
+      {
+        "id": "guizhou",
+        "name": "贵州",
+        "countryCode": "CN",
+        "label": "贵州",
+        "title": "贵州 · 旅行路线",
+        "heading": "贵州",
+        "description": "地点方位与每日路线示意，非精确导航地图。"
+      },
+      {
+        "id": "dali",
+        "name": "大理",
+        "countryCode": "CN",
+        "label": "大理",
+        "title": "大理 · 旅行路线",
+        "heading": "大理",
+        "description": "地点方位与每日路线示意，非精确导航地图。"
+      },
+      {
+        "id": "lugu-lake",
+        "name": "泸沽湖",
+        "countryCode": "CN",
+        "label": "泸沽湖",
+        "title": "泸沽湖 · 旅行路线",
+        "heading": "泸沽湖",
+        "description": "地点方位与每日路线示意，非精确导航地图。"
+      },
+      {
+        "id": "lijiang",
+        "name": "丽江",
+        "countryCode": "CN",
+        "label": "丽江",
+        "title": "丽江 · 旅行路线",
+        "heading": "丽江",
+        "description": "地点方位与每日路线示意，非精确导航地图。"
+      }
+    ]
+  },
+  "routeMap": {
+    "defaultRegionId": "guizhou",
+    "regions": [
+      {
+        "id": "guizhou",
+        "label": "贵州",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "compact-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 8,
+          "geoPlaceCount": 8,
+          "widthKm": 222.28,
+          "heightKm": 149.85,
+          "spanKm": 234.92,
+          "averageNearestKm": 8.04,
+          "components": 2,
+          "largestLegKm": 180.64,
+          "jumpRatio": 9.93
+        },
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+        "title": "贵州 · 旅行路线",
+        "ariaLabel": "贵州模板化旅行路线示意图，共4天",
+        "description": "地点方位与每日路线示意，非精确导航地图。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "贵州",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "kwe",
+              "guiyang"
+            ],
+            "paths": [
+              "M777.6 325.45 C718.5 315.8 666.6 291.0 625.15 252.3"
+            ],
+            "overviewPaths": [
+              "M777.6 325.45 C718.5 315.8 666.6 291.0 625.15 252.3"
+            ]
+          },
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "guiyang",
+              "huangguoshu",
+              "tianxingqiao",
+              "guiyang"
+            ],
+            "paths": [
+              "M625.15 252.3 C509.2 300.0 411.0 372.0 336.28 463.9 C356.4 491.9 367.3 523.2 368.37 555.8 C478.6 472.0 565.9 368.8 625.15 252.3"
+            ],
+            "overviewPaths": [
+              "M625.15 252.3 C509.2 300.0 411.0 372.0 336.28 463.9 C356.4 491.9 367.3 523.2 368.37 555.8 C478.6 472.0 565.9 368.8 625.15 252.3"
+            ]
+          },
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "guiyang-station",
+              "libo-station",
+              "xiaoqikong",
+              "libo-station",
+              "guiyang-station"
+            ],
+            "paths": [
+              "M679.75 333.96 C845.5 448.0 990.8 583.9 1107.04 733.67 C1072.8 742.4 1043.6 759.7 1021.19 784.53 C1045.3 758.7 1074.5 741.4 1107.04 733.67 C982.3 575.9 837.0 440.0 679.75 333.96"
+            ],
+            "overviewPaths": [
+              "M679.75 333.96 C845.5 448.0 990.8 583.9 1107.04 733.67 C1072.8 742.4 1043.6 759.7 1021.19 784.53 C1045.3 758.7 1074.5 741.4 1107.04 733.67 C982.3 575.9 837.0 440.0 679.75 333.96"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "guiyang",
+              "qianlingshan",
+              "kwe"
+            ],
+            "paths": [
+              "M625.15 252.3 C658.4 259.8 691.1 257.6 721.17 245.98 C748.3 267.4 767.5 294.4 777.6 325.45"
+            ],
+            "overviewPaths": [
+              "M625.15 252.3 C658.4 259.8 691.1 257.6 721.17 245.98 C748.3 267.4 767.5 294.4 777.6 325.45"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "kwe",
+            "x": 777.6,
+            "y": 325.45,
+            "color": "#397dc1",
+            "tx": 809.6,
+            "ty": 293.45,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "贵阳龙洞堡机场"
+            ],
+            "query": "贵阳龙洞堡机场 贵州",
+            "geo": {
+              "lat": 26.538,
+              "lng": 106.801
+            },
+            "days": [
+              1,
+              4
+            ]
+          },
+          {
+            "id": "guiyang",
+            "x": 625.15,
+            "y": 252.3,
+            "color": "#397dc1",
+            "tx": 593.15,
+            "ty": 220.3,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "贵阳市区"
+            ],
+            "query": "贵阳市区 贵州",
+            "geo": {
+              "lat": 26.579,
+              "lng": 106.713
+            },
+            "days": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "id": "guiyang-station",
+            "x": 679.75,
+            "y": 333.96,
+            "color": "#618344",
+            "tx": 757.75,
+            "ty": 409.96,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "贵阳站"
+            ],
+            "query": "贵阳站 贵州",
+            "geo": {
+              "lat": 26.557,
+              "lng": 106.7
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "huangguoshu",
+            "x": 336.28,
+            "y": 463.9,
+            "color": "#e77e22",
+            "tx": 258.28,
+            "ty": 539.9,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "黄果树大瀑布"
+            ],
+            "query": "黄果树大瀑布 贵州",
+            "geo": {
+              "lat": 25.992,
+              "lng": 105.668
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "tianxingqiao",
+            "x": 368.37,
+            "y": 555.8,
+            "color": "#e77e22",
+            "tx": 506.37,
+            "ty": 467.8,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "天星桥"
+            ],
+            "query": "天星桥 贵州",
+            "geo": {
+              "lat": 25.956,
+              "lng": 105.682
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "libo-station",
+            "x": 1107.04,
+            "y": 733.67,
+            "color": "#618344",
+            "tx": 1245.04,
+            "ty": 835.67,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "荔波站"
+            ],
+            "query": "荔波站 贵州",
+            "geo": {
+              "lat": 25.341,
+              "lng": 107.898
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "xiaoqikong",
+            "x": 1021.19,
+            "y": 784.53,
+            "color": "#618344",
+            "tx": 1053.19,
+            "ty": 834.53,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "荔波小七孔"
+            ],
+            "query": "荔波小七孔 贵州",
+            "geo": {
+              "lat": 25.258,
+              "lng": 107.742
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "qianlingshan",
+            "x": 721.17,
+            "y": 245.98,
+            "color": "#209aaa",
+            "tx": 799.17,
+            "ty": 183.98,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "黔灵山公园"
+            ],
+            "query": "黔灵山公园 贵州",
+            "geo": {
+              "lat": 26.608,
+              "lng": 106.688
+            },
+            "days": [
+              4
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "kwe",
+          "guiyang",
+          "guiyang-station",
+          "huangguoshu",
+          "tianxingqiao",
+          "libo-station",
+          "xiaoqikong",
+          "qianlingshan"
+        ],
+        "dailyLayouts": {
+          "1": {
+            "places": [
+              "kwe",
+              "guiyang"
+            ],
+            "labels": {
+              "kwe": {
+                "x": 809.6,
+                "y": 293.45,
+                "anchor": "start"
+              },
+              "guiyang": {
+                "x": 593.15,
+                "y": 220.3,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 701.38,
+                "y": 288.88
+              }
+            ]
+          },
+          "2": {
+            "places": [
+              "guiyang",
+              "huangguoshu",
+              "tianxingqiao"
+            ],
+            "labels": {
+              "guiyang": {
+                "x": 593.15,
+                "y": 220.3,
+                "anchor": "end"
+              },
+              "huangguoshu": {
+                "x": 258.28,
+                "y": 539.9,
+                "anchor": "end"
+              },
+              "tianxingqiao": {
+                "x": 506.37,
+                "y": 467.8,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 480.71,
+                "y": 358.1
+              },
+              {
+                "items": [],
+                "x": 352.32,
+                "y": 509.85
+              },
+              {
+                "items": [],
+                "x": 496.76,
+                "y": 404.05
+              }
+            ]
+          },
+          "3": {
+            "places": [
+              "guiyang-station",
+              "libo-station",
+              "xiaoqikong"
+            ],
+            "labels": {
+              "guiyang-station": {
+                "x": 757.75,
+                "y": 409.96,
+                "anchor": "start"
+              },
+              "libo-station": {
+                "x": 1245.04,
+                "y": 835.67,
+                "anchor": "start"
+              },
+              "xiaoqikong": {
+                "x": 1053.19,
+                "y": 834.53,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 893.39,
+                "y": 533.81
+              },
+              {
+                "items": [],
+                "x": 1064.12,
+                "y": 759.1
+              },
+              {
+                "items": [],
+                "x": 1064.12,
+                "y": 759.1
+              },
+              {
+                "items": [],
+                "x": 893.39,
+                "y": 533.81
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "guiyang",
+              "qianlingshan",
+              "kwe"
+            ],
+            "labels": {
+              "guiyang": {
+                "x": 593.15,
+                "y": 220.3,
+                "anchor": "end"
+              },
+              "qianlingshan": {
+                "x": 799.17,
+                "y": 183.98,
+                "anchor": "start"
+              },
+              "kwe": {
+                "x": 809.6,
+                "y": 293.45,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 673.16,
+                "y": 249.14
+              },
+              {
+                "items": [],
+                "x": 749.38,
+                "y": 285.71
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dali",
+        "label": "大理",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "compact-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 10,
+          "geoPlaceCount": 10,
+          "widthKm": 18.6,
+          "heightKm": 34.85,
+          "spanKm": 35.55,
+          "averageNearestKm": 5.39,
+          "components": 1,
+          "largestLegKm": 35.55,
+          "jumpRatio": 3.07
+        },
+        "days": [
+          4,
+          5,
+          6
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+        "title": "大理 · 旅行路线",
+        "ariaLabel": "大理模板化旅行路线示意图，共3天",
+        "description": "地点方位与每日路线示意，非精确导航地图。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "大理",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "dlu",
+              "dali-city"
+            ],
+            "paths": [
+              "M862.13 706.56 C821.9 726.1 790.2 754.9 768.9 791.4"
+            ],
+            "overviewPaths": [
+              "M862.13 706.56 C821.9 726.1 790.2 754.9 768.9 791.4"
+            ]
+          },
+          {
+            "day": 5,
+            "color": "#8865a5",
+            "placeIds": [
+              "dali-city",
+              "wenbi",
+              "xiaoputuo",
+              "shuanglang",
+              "dali-city"
+            ],
+            "paths": [
+              "M768.9 791.4 C737.9 702.9 733.4 613.1 755.48 527.22 C756.7 490.8 747.9 456.9 729.74 427.57 C691.3 376.4 669.8 319.0 666.51 258.6 C671.9 445.4 706.7 626.6 768.9 791.4"
+            ],
+            "overviewPaths": [
+              "M768.9 791.4 C737.9 702.9 733.4 613.1 755.48 527.22 C756.7 490.8 747.9 456.9 729.74 427.57 C691.3 376.4 669.8 319.0 666.51 258.6 C671.9 445.4 706.7 626.6 768.9 791.4"
+            ]
+          },
+          {
+            "day": 6,
+            "color": "#df6185",
+            "placeIds": [
+              "dali-city",
+              "xizhou",
+              "panxi",
+              "dali-oldtown",
+              "dali-eastgate"
+            ],
+            "paths": [
+              "M768.9 791.4 C731.7 630.6 667.0 481.7 578.52 353.54 C585.5 388.7 582.4 422.9 569.37 454.15 C556.7 520.8 563.1 585.6 588.15 644.7 C614.6 622.5 645.0 609.2 677.48 605.68"
+            ],
+            "overviewPaths": [
+              "M768.9 791.4 C731.7 630.6 667.0 481.7 578.52 353.54 C585.5 388.7 582.4 422.9 569.37 454.15 C556.7 520.8 563.1 585.6 588.15 644.7 C614.6 622.5 645.0 609.2 677.48 605.68"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "dlu",
+            "x": 862.13,
+            "y": 706.56,
+            "color": "#209aaa",
+            "tx": 894.13,
+            "ty": 674.56,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "大理凤仪机场"
+            ],
+            "query": "大理凤仪机场 大理",
+            "geo": {
+              "lat": 25.649,
+              "lng": 100.319
+            },
+            "days": [
+              4
+            ]
+          },
+          {
+            "id": "dali-city",
+            "x": 768.9,
+            "y": 791.4,
+            "color": "#209aaa",
+            "tx": 736.9,
+            "ty": 759.4,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "大理市区"
+            ],
+            "query": "大理市区 大理",
+            "geo": {
+              "lat": 25.599,
+              "lng": 100.258
+            },
+            "days": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "wenbi",
+            "x": 755.48,
+            "y": 527.22,
+            "color": "#8865a5",
+            "tx": 833.48,
+            "ty": 465.22,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "文笔村"
+            ],
+            "query": "文笔村 大理",
+            "geo": {
+              "lat": 25.759,
+              "lng": 100.236
+            },
+            "days": [
+              5
+            ]
+          },
+          {
+            "id": "xiaoputuo",
+            "x": 729.74,
+            "y": 427.57,
+            "color": "#8865a5",
+            "tx": 867.74,
+            "ty": 339.57,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "小普陀"
+            ],
+            "query": "小普陀 大理",
+            "geo": {
+              "lat": 25.808,
+              "lng": 100.227
+            },
+            "days": [
+              5
+            ]
+          },
+          {
+            "id": "shuanglang",
+            "x": 666.51,
+            "y": 258.6,
+            "color": "#8865a5",
+            "tx": 804.51,
+            "ty": 170.6,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "双廊古镇"
+            ],
+            "query": "双廊古镇 大理",
+            "geo": {
+              "lat": 25.913,
+              "lng": 100.191
+            },
+            "days": [
+              5
+            ]
+          },
+          {
+            "id": "xizhou",
+            "x": 578.52,
+            "y": 353.54,
+            "color": "#df6185",
+            "tx": 440.52,
+            "ty": 455.54,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "喜洲古镇"
+            ],
+            "query": "喜洲古镇 大理",
+            "geo": {
+              "lat": 25.852,
+              "lng": 100.133
+            },
+            "days": [
+              6
+            ]
+          },
+          {
+            "id": "panxi",
+            "x": 569.37,
+            "y": 454.15,
+            "color": "#df6185",
+            "tx": 491.37,
+            "ty": 530.15,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "磻溪村海西生态廊道"
+            ],
+            "query": "磻溪村海西生态廊道 大理",
+            "geo": {
+              "lat": 25.797,
+              "lng": 100.141
+            },
+            "days": [
+              6
+            ]
+          },
+          {
+            "id": "dali-oldtown",
+            "x": 588.15,
+            "y": 644.7,
+            "color": "#df6185",
+            "tx": 556.15,
+            "ty": 612.7,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "大理古城"
+            ],
+            "query": "大理古城 大理",
+            "geo": {
+              "lat": 25.695,
+              "lng": 100.164
+            },
+            "days": [
+              6
+            ]
+          },
+          {
+            "id": "dali-eastgate",
+            "x": 677.48,
+            "y": 605.68,
+            "color": "#df6185",
+            "tx": 539.48,
+            "ty": 707.68,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "大理古城东门"
+            ],
+            "query": "大理古城东门 大理",
+            "geo": {
+              "lat": 25.699,
+              "lng": 100.174
+            },
+            "days": [
+              6
+            ]
+          },
+          {
+            "id": "erhai",
+            "x": 659.86,
+            "y": 499.26,
+            "color": "#209aaa",
+            "tx": 797.86,
+            "ty": 601.26,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "洱海"
+            ],
+            "query": "洱海 大理",
+            "geo": {
+              "lat": 25.778,
+              "lng": 100.192
+            },
+            "days": [
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "dlu",
+          "dali-city",
+          "wenbi",
+          "xiaoputuo",
+          "shuanglang",
+          "xizhou",
+          "panxi",
+          "dali-oldtown",
+          "dali-eastgate",
+          "erhai"
+        ],
+        "dailyLayouts": {
+          "4": {
+            "places": [
+              "dlu",
+              "dali-city"
+            ],
+            "labels": {
+              "dlu": {
+                "x": 894.13,
+                "y": 674.56,
+                "anchor": "start"
+              },
+              "dali-city": {
+                "x": 736.9,
+                "y": 759.4,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 815.51,
+                "y": 748.98
+              }
+            ]
+          },
+          "5": {
+            "places": [
+              "dali-city",
+              "wenbi",
+              "xiaoputuo",
+              "shuanglang"
+            ],
+            "labels": {
+              "dali-city": {
+                "x": 736.9,
+                "y": 759.4,
+                "anchor": "end"
+              },
+              "wenbi": {
+                "x": 833.48,
+                "y": 465.22,
+                "anchor": "start"
+              },
+              "xiaoputuo": {
+                "x": 867.74,
+                "y": 339.57,
+                "anchor": "start"
+              },
+              "shuanglang": {
+                "x": 804.51,
+                "y": 170.6,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 762.19,
+                "y": 659.31
+              },
+              {
+                "items": [],
+                "x": 742.61,
+                "y": 477.39
+              },
+              {
+                "items": [],
+                "x": 698.13,
+                "y": 343.09
+              },
+              {
+                "items": [],
+                "x": 717.7,
+                "y": 525
+              }
+            ]
+          },
+          "6": {
+            "places": [
+              "dali-city",
+              "xizhou",
+              "panxi",
+              "dali-oldtown",
+              "dali-eastgate"
+            ],
+            "labels": {
+              "dali-city": {
+                "x": 736.9,
+                "y": 759.4,
+                "anchor": "end"
+              },
+              "xizhou": {
+                "x": 440.52,
+                "y": 455.54,
+                "anchor": "end"
+              },
+              "panxi": {
+                "x": 491.37,
+                "y": 530.15,
+                "anchor": "end"
+              },
+              "dali-oldtown": {
+                "x": 556.15,
+                "y": 612.7,
+                "anchor": "end"
+              },
+              "dali-eastgate": {
+                "x": 539.48,
+                "y": 707.68,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 673.71,
+                "y": 572.47
+              },
+              {
+                "items": [],
+                "x": 573.94,
+                "y": 403.85
+              },
+              {
+                "items": [],
+                "x": 578.76,
+                "y": 549.42
+              },
+              {
+                "items": [],
+                "x": 632.82,
+                "y": 625.19
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "lugu-lake",
+        "label": "泸沽湖",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "urban-radial",
+        "mapModeReason": "compact-city-route",
+        "mapModeMetrics": {
+          "placeCount": 5,
+          "geoPlaceCount": 5,
+          "widthKm": 3.34,
+          "heightKm": 6.38,
+          "spanKm": 6.39,
+          "averageNearestKm": 2.34,
+          "components": 1,
+          "largestLegKm": 6.39,
+          "jumpRatio": 1.2
+        },
+        "days": [
+          7,
+          8
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-04-urban.webp",
+        "title": "泸沽湖 · 旅行路线",
+        "ariaLabel": "泸沽湖模板化旅行路线示意图，共2天",
+        "description": "地点方位与每日路线示意，非精确导航地图。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "泸沽湖",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 7,
+            "color": "#397dc1",
+            "placeIds": [
+              "daluoshui",
+              "lugu-lovers",
+              "lige",
+              "daluoshui"
+            ],
+            "paths": [
+              "M792.47 810.55 C737.1 742.2 704.5 664.3 696.87 581.43 C723.1 502.7 726.0 423.1 705.23 347.4 C764.4 499.3 794.0 656.8 792.47 810.55"
+            ],
+            "overviewPaths": [
+              "M792.47 810.55 C737.1 742.2 704.5 664.3 696.87 581.43 C723.1 502.7 726.0 423.1 705.23 347.4 C764.4 499.3 794.0 656.8 792.47 810.55"
+            ]
+          },
+          {
+            "day": 8,
+            "color": "#e77e22",
+            "placeIds": [
+              "daluoshui",
+              "gemu",
+              "daluoshui"
+            ],
+            "paths": [
+              "M792.47 810.55 C818.9 617.5 815.3 425.0 781.99 244.45 C815.5 436.4 819.1 628.8 792.47 810.55"
+            ],
+            "overviewPaths": [
+              "M792.47 810.55 C818.9 617.5 815.3 425.0 781.99 244.45 C815.5 436.4 819.1 628.8 792.47 810.55"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "lugu",
+            "x": 993.13,
+            "y": 564.19,
+            "color": "#397dc1",
+            "tx": 1025.13,
+            "ty": 532.19,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "泸沽湖"
+            ],
+            "query": "泸沽湖 泸沽湖",
+            "geo": {
+              "lat": 27.705,
+              "lng": 100.784
+            },
+            "days": []
+          },
+          {
+            "id": "daluoshui",
+            "x": 792.47,
+            "y": 810.55,
+            "color": "#397dc1",
+            "tx": 760.47,
+            "ty": 778.55,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "大落水村"
+            ],
+            "query": "大落水村 泸沽湖",
+            "geo": {
+              "lat": 27.68,
+              "lng": 100.761
+            },
+            "days": [
+              7,
+              8
+            ]
+          },
+          {
+            "id": "lugu-lovers",
+            "x": 696.87,
+            "y": 581.43,
+            "color": "#397dc1",
+            "tx": 774.87,
+            "ty": 519.43,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "里拜情人滩"
+            ],
+            "query": "里拜情人滩 泸沽湖",
+            "geo": {
+              "lat": 27.703251,
+              "lng": 100.750042
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "lige",
+            "x": 705.23,
+            "y": 347.4,
+            "color": "#397dc1",
+            "tx": 627.23,
+            "ty": 285.4,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "里格半岛观景台"
+            ],
+            "query": "里格半岛观景台 泸沽湖",
+            "geo": {
+              "lat": 27.727,
+              "lng": 100.751
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "gemu",
+            "x": 781.99,
+            "y": 244.45,
+            "color": "#e77e22",
+            "tx": 919.99,
+            "ty": 156.45,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "格姆女神山索道"
+            ],
+            "query": "格姆女神山索道 泸沽湖",
+            "geo": {
+              "lat": 27.737447,
+              "lng": 100.759798
+            },
+            "days": [
+              8
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "lugu",
+          "daluoshui",
+          "lugu-lovers",
+          "lige",
+          "gemu"
+        ],
+        "dailyLayouts": {
+          "7": {
+            "places": [
+              "daluoshui",
+              "lugu-lovers",
+              "lige"
+            ],
+            "labels": {
+              "daluoshui": {
+                "x": 760.47,
+                "y": 778.55,
+                "anchor": "end"
+              },
+              "lugu-lovers": {
+                "x": 774.87,
+                "y": 519.43,
+                "anchor": "start"
+              },
+              "lige": {
+                "x": 627.23,
+                "y": 285.4,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 744.67,
+                "y": 695.99
+              },
+              {
+                "items": [],
+                "x": 701.05,
+                "y": 464.41
+              },
+              {
+                "items": [],
+                "x": 748.85,
+                "y": 578.97
+              }
+            ]
+          },
+          "8": {
+            "places": [
+              "daluoshui",
+              "gemu"
+            ],
+            "labels": {
+              "daluoshui": {
+                "x": 760.47,
+                "y": 778.55,
+                "anchor": "end"
+              },
+              "gemu": {
+                "x": 919.99,
+                "y": 156.45,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 787.23,
+                "y": 527.5
+              },
+              {
+                "items": [],
+                "x": 787.23,
+                "y": 527.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "lijiang",
+        "label": "丽江",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "urban-radial",
+        "mapModeReason": "compact-city-route",
+        "mapModeMetrics": {
+          "placeCount": 4,
+          "geoPlaceCount": 4,
+          "widthKm": 3.56,
+          "heightKm": 35.96,
+          "spanKm": 36.2,
+          "averageNearestKm": 10.57,
+          "components": 1,
+          "largestLegKm": 21.73,
+          "jumpRatio": 1.5
+        },
+        "days": [
+          9
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-04-urban.webp",
+        "title": "丽江 · 旅行路线",
+        "ariaLabel": "丽江模板化旅行路线示意图，共1天",
+        "description": "地点方位与每日路线示意，非精确导航地图。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "丽江",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 9,
+            "color": "#618344",
+            "placeIds": [
+              "lijiang-city",
+              "yuhu",
+              "shuhe",
+              "lijiang-city",
+              "ljg"
+            ],
+            "paths": [
+              "M856.15 496.97 C825.5 434.2 814.3 368.1 823.22 302.65 C810.7 336.8 808.5 371.5 816.54 404.92 C839.2 432.3 852.7 463.6 856.15 496.97 C834.6 583.9 838.3 669.7 866.99 749.35"
+            ],
+            "overviewPaths": [
+              "M856.15 496.97 C825.5 434.2 814.3 368.1 823.22 302.65 C810.7 336.8 808.5 371.5 816.54 404.92 C839.2 432.3 852.7 463.6 856.15 496.97 C834.6 583.9 838.3 669.7 866.99 749.35"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "lijiang-city",
+            "x": 856.15,
+            "y": 496.97,
+            "color": "#618344",
+            "tx": 888.15,
+            "ty": 464.97,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "丽江市区"
+            ],
+            "query": "丽江市区 丽江",
+            "geo": {
+              "lat": 26.875,
+              "lng": 100.232
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "yuhu",
+            "x": 823.22,
+            "y": 302.65,
+            "color": "#618344",
+            "tx": 791.22,
+            "ty": 270.65,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "玉湖村"
+            ],
+            "query": "玉湖村 丽江",
+            "geo": {
+              "lat": 27.004,
+              "lng": 100.21
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "shuhe",
+            "x": 816.54,
+            "y": 404.92,
+            "color": "#618344",
+            "tx": 894.54,
+            "ty": 342.92,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "束河古镇"
+            ],
+            "query": "束河古镇 丽江",
+            "geo": {
+              "lat": 26.923,
+              "lng": 100.21
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "ljg",
+            "x": 866.99,
+            "y": 749.35,
+            "color": "#618344",
+            "tx": 788.99,
+            "ty": 687.35,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "丽江三义机场"
+            ],
+            "query": "丽江三义机场 丽江",
+            "geo": {
+              "lat": 26.68,
+              "lng": 100.246
+            },
+            "days": [
+              9
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "lijiang-city",
+          "yuhu",
+          "shuhe",
+          "ljg"
+        ],
+        "dailyLayouts": {
+          "9": {
+            "places": [
+              "lijiang-city",
+              "yuhu",
+              "shuhe",
+              "ljg"
+            ],
+            "labels": {
+              "lijiang-city": {
+                "x": 888.15,
+                "y": 464.97,
+                "anchor": "start"
+              },
+              "yuhu": {
+                "x": 791.22,
+                "y": 270.65,
+                "anchor": "end"
+              },
+              "shuhe": {
+                "x": 894.54,
+                "y": 342.92,
+                "anchor": "start"
+              },
+              "ljg": {
+                "x": 788.99,
+                "y": 687.35,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 839.68,
+                "y": 399.81
+              },
+              {
+                "items": [],
+                "x": 819.88,
+                "y": 353.78
+              },
+              {
+                "items": [],
+                "x": 836.35,
+                "y": 450.95
+              },
+              {
+                "items": [],
+                "x": 861.57,
+                "y": 623.16
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
