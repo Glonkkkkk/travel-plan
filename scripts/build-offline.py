@@ -13,7 +13,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, KeepTogether, Image, Flowable
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT.parent / '手机离线版'
+OUT = ROOT / 'output/offline'
 PDFOUT = ROOT / 'output/pdf'
 MAPS = Path('/private/tmp/travel-offline-maps')
 OUT.mkdir(parents=True, exist_ok=True)
