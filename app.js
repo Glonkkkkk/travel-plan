@@ -489,11 +489,10 @@ function dayCard(day) {
     <article class="day-card${isToday ? " is-today" : ""}" data-day="${day.day}">
       <span class="day-dot" aria-hidden="true"></span>
       <button class="day-toggle" type="button" aria-expanded="${expanded}" aria-controls="day-detail-${day.day}">
-        <span>
+        <span class="day-heading-copy">
           <span class="day-meta">DAY ${String(day.day).padStart(2, "0")} · ${escapeHtml(formatCompactDate(day.date))}${isToday ? " · 今天" : ""}</span>
           <span class="day-title">${escapeHtml(day.title)}</span>
-          <span class="day-locations">${escapeHtml(day.locations.join(" → "))}</span>
-          ${ticketSummary}
+          <span class="day-locations"><span>${escapeHtml(day.locations.join(" → "))}</span>${ticketSummary}</span>
         </span>
         <span class="day-chevron" aria-hidden="true">+</span>
       </button>
