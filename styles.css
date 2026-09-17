@@ -134,7 +134,7 @@ main { overflow: hidden; }
 .flight-stop__timing b { color: #fff; font: 800 clamp(24px, 7.8vw, 40px)/1.1 ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; letter-spacing: -.05em; white-space: nowrap; }
 .flight-stop__timing em { color: #e0a983; font-style: normal; font-size: 9px; }
 .flight-segment { min-width: 0; padding-top: 53px; color: #91b9c0; text-align: center; }
-.flight-segment span { display: block; overflow: hidden; font: 700 9px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; text-overflow: ellipsis; white-space: nowrap; }
+.flight-segment span { display: block; position: relative; left: 50%; width: max-content; transform: translateX(-50%); color: #eff8f8; font: 750 clamp(20px, 6.6vw, 34px)/1.1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -.04em; white-space: nowrap; }
 .flight-segment i { display: block; height: 1px; margin-top: 9px; background: rgba(143,198,208,.5); color: #8fc6d0; font-style: normal; font-size: 13px; line-height: 1px; text-align: right; }
 .flight-card__countdown-row { margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.16); }
 .flight-countdown { text-align: left; }
