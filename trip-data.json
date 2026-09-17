@@ -22,8 +22,10 @@
     "language": "zh-CN",
     "assets": {
       "routeMaps": [
-        "assets/maps/templates/template-07-compact-basin.webp",
-        "assets/maps/templates/template-04-urban.webp"
+        "assets/maps/autumn-2026/guizhou.svg",
+        "assets/maps/autumn-2026/dali.svg",
+        "assets/maps/autumn-2026/lugu-lake.svg",
+        "assets/maps/autumn-2026/lijiang.svg"
       ]
     }
   },
@@ -1639,7 +1641,7 @@
     "schemaVersion": "1.0-lite",
     "mapMode": "template-auto",
     "templateId": "auto",
-    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "disclaimer": "原创行程手绘示意图 · 路线不代表实际道路或比例，导航请点地点打开高德。",
     "places": [
       {
         "id": "kwe",
@@ -2176,7 +2178,198 @@
         "label": "贵州",
         "title": "贵州 · 旅行路线",
         "heading": "贵州",
-        "description": "地点方位与每日路线示意，非精确导航地图。"
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "illustration": {
+          "baseImage": "assets/maps/autumn-2026/guizhou.svg",
+          "subtitle": "以贵阳为起点 · 两次当日往返",
+          "points": {
+            "guiyang": {
+              "x": 615,
+              "y": 365,
+              "tx": 640,
+              "ty": 360,
+              "anchor": "start"
+            },
+            "qianlingshan": {
+              "x": 505,
+              "y": 260,
+              "tx": 478,
+              "ty": 250,
+              "anchor": "end"
+            },
+            "guiyang-station": {
+              "x": 625,
+              "y": 510,
+              "tx": 592,
+              "ty": 510,
+              "anchor": "end"
+            },
+            "kwe": {
+              "x": 890,
+              "y": 440,
+              "tx": 880,
+              "ty": 492,
+              "anchor": "middle",
+              "lines": [
+                "贵阳龙洞堡",
+                "机场"
+              ]
+            },
+            "huangguoshu": {
+              "x": 230,
+              "y": 700,
+              "tx": 250,
+              "ty": 682,
+              "anchor": "start"
+            },
+            "tianxingqiao": {
+              "x": 290,
+              "y": 838,
+              "tx": 320,
+              "ty": 835,
+              "anchor": "start"
+            },
+            "libo-station": {
+              "x": 930,
+              "y": 740,
+              "tx": 930,
+              "ty": 705,
+              "anchor": "middle"
+            },
+            "xiaoqikong": {
+              "x": 805,
+              "y": 907,
+              "tx": 805,
+              "ty": 952,
+              "anchor": "middle"
+            }
+          },
+          "edges": [
+            {
+              "from": "kwe",
+              "to": "guiyang",
+              "via": [
+                [
+                  800,
+                  400
+                ],
+                [
+                  710,
+                  400
+                ]
+              ]
+            },
+            {
+              "from": "guiyang",
+              "to": "qianlingshan",
+              "via": [
+                [
+                  560,
+                  340
+                ]
+              ]
+            },
+            {
+              "from": "qianlingshan",
+              "to": "kwe",
+              "via": [
+                [
+                  660,
+                  282
+                ],
+                [
+                  800,
+                  345
+                ]
+              ]
+            },
+            {
+              "from": "guiyang",
+              "to": "huangguoshu",
+              "via": [
+                [
+                  500,
+                  440
+                ],
+                [
+                  425,
+                  565
+                ],
+                [
+                  320,
+                  610
+                ]
+              ]
+            },
+            {
+              "from": "huangguoshu",
+              "to": "tianxingqiao",
+              "via": [
+                [
+                  240,
+                  772
+                ]
+              ]
+            },
+            {
+              "from": "tianxingqiao",
+              "to": "guiyang",
+              "via": [
+                [
+                  435,
+                  790
+                ],
+                [
+                  500,
+                  610
+                ],
+                [
+                  560,
+                  480
+                ]
+              ]
+            },
+            {
+              "from": "guiyang",
+              "to": "guiyang-station",
+              "via": []
+            },
+            {
+              "from": "guiyang-station",
+              "to": "libo-station",
+              "via": [
+                [
+                  740,
+                  560
+                ],
+                [
+                  860,
+                  640
+                ]
+              ]
+            },
+            {
+              "from": "libo-station",
+              "to": "xiaoqikong",
+              "via": [
+                [
+                  885,
+                  815
+                ]
+              ]
+            }
+          ],
+          "notes": [
+            "9/26 黄果树：景交车串联景点",
+            "9/27 小七孔：贵阳站 ⇄ 荔波站，当晚返回"
+          ],
+          "dayLabels": {
+            "1": "抵达贵阳",
+            "2": "黄果树",
+            "3": "小七孔",
+            "4": "黔灵山 · 转场"
+          }
+        }
       },
       {
         "id": "dali",
@@ -2185,7 +2378,230 @@
         "label": "大理",
         "title": "大理 · 旅行路线",
         "heading": "大理",
-        "description": "地点方位与每日路线示意，非精确导航地图。"
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "illustration": {
+          "baseImage": "assets/maps/autumn-2026/dali.svg",
+          "subtitle": "一日海东，一日海西 · 沿着洱海慢慢走",
+          "points": {
+            "dlu": {
+              "x": 945,
+              "y": 890,
+              "tx": 950,
+              "ty": 938,
+              "anchor": "middle",
+              "lines": [
+                "大理凤仪机场"
+              ]
+            },
+            "dali-city": {
+              "x": 659,
+              "y": 930,
+              "tx": 638,
+              "ty": 976,
+              "anchor": "middle",
+              "lines": [
+                "大理市区"
+              ]
+            },
+            "wenbi": {
+              "x": 876,
+              "y": 687,
+              "tx": 903,
+              "ty": 685,
+              "anchor": "start"
+            },
+            "xiaoputuo": {
+              "x": 872,
+              "y": 450,
+              "tx": 900,
+              "ty": 444,
+              "anchor": "start"
+            },
+            "shuanglang": {
+              "x": 814,
+              "y": 246,
+              "tx": 830,
+              "ty": 221,
+              "anchor": "start"
+            },
+            "xizhou": {
+              "x": 393,
+              "y": 337,
+              "tx": 368,
+              "ty": 327,
+              "anchor": "end"
+            },
+            "panxi": {
+              "x": 378,
+              "y": 490,
+              "tx": 353,
+              "ty": 490,
+              "anchor": "end",
+              "lines": [
+                "磻溪村",
+                "海西生态廊道"
+              ]
+            },
+            "dali-oldtown": {
+              "x": 365,
+              "y": 700,
+              "tx": 342,
+              "ty": 693,
+              "anchor": "end"
+            },
+            "dali-eastgate": {
+              "x": 445,
+              "y": 791,
+              "tx": 415,
+              "ty": 810,
+              "anchor": "end",
+              "lines": [
+                "古城东门",
+                "19:30 还车"
+              ]
+            },
+            "erhai": {
+              "x": 630,
+              "y": 555,
+              "tx": 630,
+              "ty": 550,
+              "anchor": "middle",
+              "lines": [
+                "洱海"
+              ]
+            }
+          },
+          "hiddenLabels": [
+            "erhai"
+          ],
+          "edges": [
+            {
+              "from": "dlu",
+              "to": "dali-city",
+              "via": [
+                [
+                  885,
+                  929
+                ],
+                [
+                  765,
+                  940
+                ]
+              ]
+            },
+            {
+              "from": "dali-city",
+              "to": "wenbi",
+              "via": [
+                [
+                  780,
+                  880
+                ],
+                [
+                  837,
+                  791
+                ]
+              ]
+            },
+            {
+              "from": "wenbi",
+              "to": "xiaoputuo",
+              "via": [
+                [
+                  860,
+                  595
+                ],
+                [
+                  872,
+                  522
+                ]
+              ]
+            },
+            {
+              "from": "xiaoputuo",
+              "to": "shuanglang",
+              "via": [
+                [
+                  844,
+                  370
+                ]
+              ]
+            },
+            {
+              "from": "dali-city",
+              "to": "xizhou",
+              "via": [
+                [
+                  510,
+                  920
+                ],
+                [
+                  408,
+                  868
+                ],
+                [
+                  325,
+                  785
+                ],
+                [
+                  310,
+                  665
+                ],
+                [
+                  310,
+                  570
+                ],
+                [
+                  322,
+                  430
+                ]
+              ]
+            },
+            {
+              "from": "xizhou",
+              "to": "panxi",
+              "via": [
+                [
+                  365,
+                  409
+                ]
+              ]
+            },
+            {
+              "from": "panxi",
+              "to": "dali-oldtown",
+              "via": [
+                [
+                  350,
+                  570
+                ],
+                [
+                  350,
+                  645
+                ]
+              ]
+            },
+            {
+              "from": "dali-oldtown",
+              "to": "dali-eastgate",
+              "via": [
+                [
+                  414,
+                  730
+                ]
+              ]
+            }
+          ],
+          "notes": [
+            "9/29 海东：文笔村 → 小普陀 → 双廊，原路回市区",
+            "9/30 海西：喜洲 → 磻溪 → 古城，19:30 东门还车"
+          ],
+          "dayLabels": {
+            "4": "机场取车",
+            "5": "海东自驾",
+            "6": "海西 · 古城"
+          }
+        }
       },
       {
         "id": "lugu-lake",
@@ -2194,7 +2610,121 @@
         "label": "泸沽湖",
         "title": "泸沽湖 · 旅行路线",
         "heading": "泸沽湖",
-        "description": "地点方位与每日路线示意，非精确导航地图。"
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "illustration": {
+          "baseImage": "assets/maps/autumn-2026/lugu-lake.svg",
+          "subtitle": "10/1 西岸环湖 · 10/2 早起去女神山",
+          "points": {
+            "lugu": {
+              "x": 636,
+              "y": 595,
+              "tx": 636,
+              "ty": 595,
+              "anchor": "middle",
+              "lines": [
+                "泸沽湖"
+              ]
+            },
+            "daluoshui": {
+              "x": 425,
+              "y": 860,
+              "tx": 400,
+              "ty": 881,
+              "anchor": "end",
+              "lines": [
+                "大落水村",
+                "凿见民宿（暂定）"
+              ]
+            },
+            "lugu-lovers": {
+              "x": 302,
+              "y": 641,
+              "tx": 277,
+              "ty": 638,
+              "anchor": "end",
+              "lines": [
+                "里拜情人滩"
+              ]
+            },
+            "lige": {
+              "x": 365,
+              "y": 430,
+              "tx": 335,
+              "ty": 440,
+              "anchor": "end",
+              "lines": [
+                "里格半岛",
+                "观景台"
+              ]
+            },
+            "gemu": {
+              "x": 477,
+              "y": 288,
+              "tx": 513,
+              "ty": 278,
+              "anchor": "start",
+              "lines": [
+                "女神山索道",
+                "10/2 早起"
+              ]
+            }
+          },
+          "hiddenLabels": [
+            "lugu"
+          ],
+          "edges": [
+            {
+              "from": "daluoshui",
+              "to": "lugu-lovers",
+              "via": [
+                [
+                  371,
+                  793
+                ],
+                [
+                  325,
+                  728
+                ]
+              ]
+            },
+            {
+              "from": "lugu-lovers",
+              "to": "lige",
+              "via": [
+                [
+                  305,
+                  545
+                ],
+                [
+                  332,
+                  485
+                ]
+              ]
+            },
+            {
+              "from": "lige",
+              "to": "gemu",
+              "via": [
+                [
+                  363,
+                  351
+                ],
+                [
+                  419,
+                  308
+                ]
+              ]
+            }
+          ],
+          "notes": [
+            "10/1 下午：大落水 → 里拜情人滩 → 里格 → 返回",
+            "10/2：女神山索道往返后离开湖区，下午回丽江"
+          ],
+          "dayLabels": {
+            "7": "西岸环湖",
+            "8": "女神山往返"
+          }
+        }
       },
       {
         "id": "lijiang",
@@ -2203,7 +2733,113 @@
         "label": "丽江",
         "title": "丽江 · 旅行路线",
         "heading": "丽江",
-        "description": "地点方位与每日路线示意，非精确导航地图。"
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "illustration": {
+          "baseImage": "assets/maps/autumn-2026/lijiang.svg",
+          "subtitle": "10/2 下午抵达丽江 · 10/3 玉湖与束河",
+          "points": {
+            "yuhu": {
+              "x": 550,
+              "y": 389,
+              "tx": 583,
+              "ty": 379,
+              "anchor": "start"
+            },
+            "shuhe": {
+              "x": 462,
+              "y": 591,
+              "tx": 493,
+              "ty": 593,
+              "anchor": "start"
+            },
+            "lijiang-city": {
+              "x": 603,
+              "y": 764,
+              "tx": 638,
+              "ty": 764,
+              "anchor": "start"
+            },
+            "ljg": {
+              "x": 790,
+              "y": 938,
+              "tx": 823,
+              "ty": 941,
+              "anchor": "start",
+              "lines": [
+                "丽江三义机场"
+              ]
+            }
+          },
+          "edges": [
+            {
+              "from": "lijiang-city",
+              "to": "yuhu",
+              "via": [
+                [
+                  709,
+                  699
+                ],
+                [
+                  710,
+                  539
+                ],
+                [
+                  634,
+                  445
+                ]
+              ]
+            },
+            {
+              "from": "yuhu",
+              "to": "shuhe",
+              "via": [
+                [
+                  511,
+                  453
+                ],
+                [
+                  493,
+                  523
+                ]
+              ]
+            },
+            {
+              "from": "shuhe",
+              "to": "lijiang-city",
+              "via": [
+                [
+                  491,
+                  653
+                ],
+                [
+                  533,
+                  718
+                ]
+              ]
+            },
+            {
+              "from": "lijiang-city",
+              "to": "ljg",
+              "via": [
+                [
+                  663,
+                  824
+                ],
+                [
+                  727,
+                  890
+                ]
+              ]
+            }
+          ],
+          "notes": [
+            "10/3：丽江市区 → 玉湖村 → 束河古镇 → 机场",
+            "建议 21:00 抵达机场 · 航班 23:35 起飞"
+          ],
+          "dayLabels": {
+            "9": "玉湖 · 束河 · 返程"
+          }
+        }
       }
     ]
   },
@@ -2214,21 +2850,9 @@
         "id": "guizhou",
         "label": "贵州",
         "countryCode": "CN",
-        "scope": "template-schematic",
-        "mapMode": "frozen-template",
-        "templateId": "compact-basin",
-        "mapModeReason": "dense-place-cluster",
-        "mapModeMetrics": {
-          "placeCount": 8,
-          "geoPlaceCount": 8,
-          "widthKm": 222.28,
-          "heightKm": 149.85,
-          "spanKm": 234.92,
-          "averageNearestKm": 8.04,
-          "components": 2,
-          "largestLegKm": 180.64,
-          "jumpRatio": 9.93
-        },
+        "scope": "trip-illustration",
+        "mapMode": "original-illustration",
+        "templateId": "autumn-2026-original",
         "days": [
           1,
           2,
@@ -2236,265 +2860,209 @@
           4
         ],
         "canvas": {
-          "width": 1448,
-          "height": 1086
+          "width": 1100,
+          "height": 1120
         },
-        "projection": {
-          "type": "relative-schematic",
-          "bounds": null
-        },
-        "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+        "baseImage": "assets/maps/autumn-2026/guizhou.svg",
         "title": "贵州 · 旅行路线",
-        "ariaLabel": "贵州模板化旅行路线示意图，共4天",
-        "description": "地点方位与每日路线示意，非精确导航地图。",
-        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "ariaLabel": "贵州原创手绘行程示意图",
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "disclaimer": "原创行程手绘示意图 · 路线不代表实际道路或比例，导航请点地点打开高德。",
         "heading": {
-          "text": "贵州",
-          "x": 33,
-          "y": 105,
-          "size": 40
+          "text": "贵州 · 旅行手绘地图",
+          "x": 55,
+          "y": 80,
+          "size": 43
         },
+        "subtitle": "以贵阳为起点 · 两次当日往返",
         "legend": {
-          "x": 35,
-          "y": 168,
-          "gap": 43
+          "x": 55,
+          "y": 155,
+          "gap": 38,
+          "columns": 2,
+          "columnGap": 460
         },
         "annotations": [],
-        "routes": [
-          {
-            "day": 1,
-            "color": "#397dc1",
-            "placeIds": [
-              "kwe",
-              "guiyang"
-            ],
-            "paths": [
-              "M777.6 325.45 C718.5 315.8 666.6 291.0 625.15 252.3"
-            ],
-            "overviewPaths": [
-              "M777.6 325.45 C718.5 315.8 666.6 291.0 625.15 252.3"
-            ]
-          },
-          {
-            "day": 2,
-            "color": "#e77e22",
-            "placeIds": [
-              "guiyang",
-              "huangguoshu",
-              "tianxingqiao",
-              "guiyang"
-            ],
-            "paths": [
-              "M625.15 252.3 C509.2 300.0 411.0 372.0 336.28 463.9 C356.4 491.9 367.3 523.2 368.37 555.8 C478.6 472.0 565.9 368.8 625.15 252.3"
-            ],
-            "overviewPaths": [
-              "M625.15 252.3 C509.2 300.0 411.0 372.0 336.28 463.9 C356.4 491.9 367.3 523.2 368.37 555.8 C478.6 472.0 565.9 368.8 625.15 252.3"
-            ]
-          },
-          {
-            "day": 3,
-            "color": "#618344",
-            "placeIds": [
-              "guiyang-station",
-              "libo-station",
-              "xiaoqikong",
-              "libo-station",
-              "guiyang-station"
-            ],
-            "paths": [
-              "M679.75 333.96 C845.5 448.0 990.8 583.9 1107.04 733.67 C1072.8 742.4 1043.6 759.7 1021.19 784.53 C1045.3 758.7 1074.5 741.4 1107.04 733.67 C982.3 575.9 837.0 440.0 679.75 333.96"
-            ],
-            "overviewPaths": [
-              "M679.75 333.96 C845.5 448.0 990.8 583.9 1107.04 733.67 C1072.8 742.4 1043.6 759.7 1021.19 784.53 C1045.3 758.7 1074.5 741.4 1107.04 733.67 C982.3 575.9 837.0 440.0 679.75 333.96"
-            ]
-          },
-          {
-            "day": 4,
-            "color": "#209aaa",
-            "placeIds": [
-              "guiyang",
-              "qianlingshan",
-              "kwe"
-            ],
-            "paths": [
-              "M625.15 252.3 C658.4 259.8 691.1 257.6 721.17 245.98 C748.3 267.4 767.5 294.4 777.6 325.45"
-            ],
-            "overviewPaths": [
-              "M625.15 252.3 C658.4 259.8 691.1 257.6 721.17 245.98 C748.3 267.4 767.5 294.4 777.6 325.45"
-            ]
-          }
-        ],
         "places": [
           {
             "id": "kwe",
-            "x": 777.6,
-            "y": 325.45,
-            "color": "#397dc1",
-            "tx": 809.6,
-            "ty": 293.45,
-            "size": 24,
-            "anchor": "start",
+            "x": 890,
+            "y": 440,
+            "tx": 880,
+            "ty": 492,
+            "anchor": "middle",
             "lines": [
-              "贵阳龙洞堡机场"
+              "贵阳龙洞堡",
+              "机场"
             ],
-            "query": "贵阳龙洞堡机场 贵州",
             "geo": {
               "lat": 26.538,
               "lng": 106.801
             },
+            "size": 29,
+            "color": "#397dc1",
+            "query": "贵阳龙洞堡机场",
             "days": [
               1,
               4
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "guiyang",
-            "x": 625.15,
-            "y": 252.3,
-            "color": "#397dc1",
-            "tx": 593.15,
-            "ty": 220.3,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "贵阳市区"
-            ],
-            "query": "贵阳市区 贵州",
+            "x": 615,
+            "y": 365,
+            "tx": 640,
+            "ty": 360,
+            "anchor": "start",
             "geo": {
               "lat": 26.579,
               "lng": 106.713
             },
+            "lines": [
+              "贵阳市区"
+            ],
+            "size": 29,
+            "color": "#397dc1",
+            "query": "贵阳市区",
             "days": [
               1,
               2,
               4
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "guiyang-station",
-            "x": 679.75,
-            "y": 333.96,
-            "color": "#618344",
-            "tx": 757.75,
-            "ty": 409.96,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "贵阳站"
-            ],
-            "query": "贵阳站 贵州",
+            "x": 625,
+            "y": 510,
+            "tx": 592,
+            "ty": 510,
+            "anchor": "end",
             "geo": {
               "lat": 26.557,
               "lng": 106.7
             },
+            "lines": [
+              "贵阳站"
+            ],
+            "size": 29,
+            "color": "#618344",
+            "query": "贵阳站",
             "days": [
               3
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "huangguoshu",
-            "x": 336.28,
-            "y": 463.9,
-            "color": "#e77e22",
-            "tx": 258.28,
-            "ty": 539.9,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "黄果树大瀑布"
-            ],
-            "query": "黄果树大瀑布 贵州",
+            "x": 230,
+            "y": 700,
+            "tx": 250,
+            "ty": 682,
+            "anchor": "start",
             "geo": {
               "lat": 25.992,
               "lng": 105.668
             },
+            "lines": [
+              "黄果树大瀑布"
+            ],
+            "size": 29,
+            "color": "#e77e22",
+            "query": "黄果树大瀑布",
             "days": [
               2
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "tianxingqiao",
-            "x": 368.37,
-            "y": 555.8,
-            "color": "#e77e22",
-            "tx": 506.37,
-            "ty": 467.8,
-            "size": 24,
+            "x": 290,
+            "y": 838,
+            "tx": 320,
+            "ty": 835,
             "anchor": "start",
-            "lines": [
-              "天星桥"
-            ],
-            "query": "天星桥 贵州",
             "geo": {
               "lat": 25.956,
               "lng": 105.682
             },
+            "lines": [
+              "天星桥"
+            ],
+            "size": 29,
+            "color": "#e77e22",
+            "query": "天星桥",
             "days": [
               2
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "libo-station",
-            "x": 1107.04,
-            "y": 733.67,
-            "color": "#618344",
-            "tx": 1245.04,
-            "ty": 835.67,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "荔波站"
-            ],
-            "query": "荔波站 贵州",
+            "x": 930,
+            "y": 740,
+            "tx": 930,
+            "ty": 705,
+            "anchor": "middle",
             "geo": {
               "lat": 25.341,
               "lng": 107.898
             },
+            "lines": [
+              "荔波站"
+            ],
+            "size": 29,
+            "color": "#618344",
+            "query": "荔波站",
             "days": [
               3
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "xiaoqikong",
-            "x": 1021.19,
-            "y": 784.53,
-            "color": "#618344",
-            "tx": 1053.19,
-            "ty": 834.53,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "荔波小七孔"
-            ],
-            "query": "荔波小七孔 贵州",
+            "x": 805,
+            "y": 907,
+            "tx": 805,
+            "ty": 952,
+            "anchor": "middle",
             "geo": {
               "lat": 25.258,
               "lng": 107.742
             },
+            "lines": [
+              "荔波小七孔"
+            ],
+            "size": 29,
+            "color": "#618344",
+            "query": "荔波小七孔",
             "days": [
               3
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "qianlingshan",
-            "x": 721.17,
-            "y": 245.98,
-            "color": "#209aaa",
-            "tx": 799.17,
-            "ty": 183.98,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "黔灵山公园"
-            ],
-            "query": "黔灵山公园 贵州",
+            "x": 505,
+            "y": 260,
+            "tx": 478,
+            "ty": 250,
+            "anchor": "end",
             "geo": {
               "lat": 26.608,
               "lng": 106.688
             },
+            "lines": [
+              "黔灵山公园"
+            ],
+            "size": 29,
+            "color": "#209aaa",
+            "query": "黔灵山公园",
             "days": [
               4
-            ]
+            ],
+            "hiddenLabel": false
           }
         ],
         "overviewPlaceIds": [
@@ -2507,31 +3075,143 @@
           "xiaoqikong",
           "qianlingshan"
         ],
+        "routes": [
+          {
+            "laneOffset": 0,
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "kwe",
+              "guiyang"
+            ],
+            "paths": [
+              "M890 440 L800 400 L710 400 L615 365"
+            ],
+            "arrows": [
+              {
+                "x": 753.623147180689,
+                "y": 400,
+                "angle": 180
+              }
+            ],
+            "label": "抵达贵阳"
+          },
+          {
+            "laneOffset": 0,
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "guiyang",
+              "huangguoshu",
+              "tianxingqiao",
+              "guiyang"
+            ],
+            "paths": [
+              "M615 365 L500 440 L425 565 L320 610 L230 700",
+              "M230 700 L240 772 L290 838",
+              "M290 838 L435 790 L500 610 L560 480 L615 365"
+            ],
+            "arrows": [
+              {
+                "x": 435.6894936958207,
+                "y": 547.1841771736322,
+                "angle": 120.96375653207352
+              },
+              {
+                "x": 243.0524519407983,
+                "y": 776.0292365618537,
+                "angle": 52.85331330197822
+              },
+              {
+                "x": 487.52464963105297,
+                "y": 644.5471240986225,
+                "angle": -70.14478563067895
+              }
+            ],
+            "label": "黄果树"
+          },
+          {
+            "laneOffset": 0,
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "guiyang-station",
+              "libo-station",
+              "xiaoqikong",
+              "libo-station",
+              "guiyang-station"
+            ],
+            "paths": [
+              "M625 510 L740 560 L860 640 L930 740",
+              "M930 740 L885 815 L805 907",
+              "M805 907 L885 815 L930 740",
+              "M930 740 L860 640 L740 560 L625 510"
+            ],
+            "arrows": [
+              {
+                "x": 798.6130529170972,
+                "y": 599.0753686113982,
+                "angle": 33.690067525979785
+              },
+              {
+                "x": 873.6960989086087,
+                "y": 827.9994862550999,
+                "angle": 131.0090869015702
+              }
+            ],
+            "label": "小七孔"
+          },
+          {
+            "laneOffset": 0,
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "guiyang",
+              "qianlingshan",
+              "kwe"
+            ],
+            "paths": [
+              "M615 365 L560 340 L505 260",
+              "M505 260 L660 282 L800 345 L890 440"
+            ],
+            "arrows": [
+              {
+                "x": 549.6134845307771,
+                "y": 324.89234113567574,
+                "angle": -124.50852298766841
+              },
+              {
+                "x": 718.2859205364518,
+                "y": 308.2286642414033,
+                "angle": 24.22774531795417
+              }
+            ],
+            "label": "黔灵山 · 转场"
+          }
+        ],
         "dailyLayouts": {
           "1": {
             "places": [
               "kwe",
               "guiyang"
             ],
+            "roles": {
+              "kwe": "起点",
+              "guiyang": "终点"
+            },
             "labels": {
               "kwe": {
-                "x": 809.6,
-                "y": 293.45,
-                "anchor": "start"
+                "x": 880,
+                "y": 492,
+                "anchor": "middle"
               },
               "guiyang": {
-                "x": 593.15,
-                "y": 220.3,
-                "anchor": "end"
+                "x": 640,
+                "y": 360,
+                "anchor": "start"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 701.38,
-                "y": 288.88
-              }
-            ]
+            "transport": []
           },
           "2": {
             "places": [
@@ -2539,40 +3219,29 @@
               "huangguoshu",
               "tianxingqiao"
             ],
+            "roles": {
+              "guiyang": "起点 / 终点",
+              "huangguoshu": "途经点",
+              "tianxingqiao": "途经点"
+            },
             "labels": {
               "guiyang": {
-                "x": 593.15,
-                "y": 220.3,
-                "anchor": "end"
+                "x": 640,
+                "y": 360,
+                "anchor": "start"
               },
               "huangguoshu": {
-                "x": 258.28,
-                "y": 539.9,
-                "anchor": "end"
+                "x": 250,
+                "y": 682,
+                "anchor": "start"
               },
               "tianxingqiao": {
-                "x": 506.37,
-                "y": 467.8,
+                "x": 320,
+                "y": 835,
                 "anchor": "start"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 480.71,
-                "y": 358.1
-              },
-              {
-                "items": [],
-                "x": 352.32,
-                "y": 509.85
-              },
-              {
-                "items": [],
-                "x": 496.76,
-                "y": 404.05
-              }
-            ]
+            "transport": []
           },
           "3": {
             "places": [
@@ -2580,45 +3249,29 @@
               "libo-station",
               "xiaoqikong"
             ],
+            "roles": {
+              "guiyang-station": "起点 / 终点",
+              "libo-station": "途经点",
+              "xiaoqikong": "途经点"
+            },
             "labels": {
               "guiyang-station": {
-                "x": 757.75,
-                "y": 409.96,
-                "anchor": "start"
+                "x": 592,
+                "y": 510,
+                "anchor": "end"
               },
               "libo-station": {
-                "x": 1245.04,
-                "y": 835.67,
-                "anchor": "start"
+                "x": 930,
+                "y": 705,
+                "anchor": "middle"
               },
               "xiaoqikong": {
-                "x": 1053.19,
-                "y": 834.53,
-                "anchor": "start"
+                "x": 805,
+                "y": 952,
+                "anchor": "middle"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 893.39,
-                "y": 533.81
-              },
-              {
-                "items": [],
-                "x": 1064.12,
-                "y": 759.1
-              },
-              {
-                "items": [],
-                "x": 1064.12,
-                "y": 759.1
-              },
-              {
-                "items": [],
-                "x": 893.39,
-                "y": 533.81
-              }
-            ]
+            "transport": []
           },
           "4": {
             "places": [
@@ -2626,351 +3279,306 @@
               "qianlingshan",
               "kwe"
             ],
+            "roles": {
+              "guiyang": "起点",
+              "qianlingshan": "途经点",
+              "kwe": "终点"
+            },
             "labels": {
               "guiyang": {
-                "x": 593.15,
-                "y": 220.3,
-                "anchor": "end"
+                "x": 640,
+                "y": 360,
+                "anchor": "start"
               },
               "qianlingshan": {
-                "x": 799.17,
-                "y": 183.98,
-                "anchor": "start"
+                "x": 478,
+                "y": 250,
+                "anchor": "end"
               },
               "kwe": {
-                "x": 809.6,
-                "y": 293.45,
-                "anchor": "start"
+                "x": 880,
+                "y": 492,
+                "anchor": "middle"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 673.16,
-                "y": 249.14
-              },
-              {
-                "items": [],
-                "x": 749.38,
-                "y": 285.71
-              }
-            ]
+            "transport": []
           }
-        }
+        },
+        "illustrated": true,
+        "roads": [
+          "M890 440 L800 400 L710 400 L615 365",
+          "M615 365 L560 340 L505 260",
+          "M505 260 L660 282 L800 345 L890 440",
+          "M615 365 L500 440 L425 565 L320 610 L230 700",
+          "M230 700 L240 772 L290 838",
+          "M290 838 L435 790 L500 610 L560 480 L615 365",
+          "M615 365 L625 510",
+          "M625 510 L740 560 L860 640 L930 740",
+          "M930 740 L885 815 L805 907"
+        ],
+        "notes": [
+          "9/26 黄果树：景交车串联景点",
+          "9/27 小七孔：贵阳站 ⇄ 荔波站，当晚返回"
+        ]
       },
       {
         "id": "dali",
         "label": "大理",
         "countryCode": "CN",
-        "scope": "template-schematic",
-        "mapMode": "frozen-template",
-        "templateId": "compact-basin",
-        "mapModeReason": "dense-place-cluster",
-        "mapModeMetrics": {
-          "placeCount": 10,
-          "geoPlaceCount": 10,
-          "widthKm": 18.6,
-          "heightKm": 34.85,
-          "spanKm": 35.55,
-          "averageNearestKm": 5.39,
-          "components": 1,
-          "largestLegKm": 35.55,
-          "jumpRatio": 3.07
-        },
+        "scope": "trip-illustration",
+        "mapMode": "original-illustration",
+        "templateId": "autumn-2026-original",
         "days": [
           4,
           5,
           6
         ],
         "canvas": {
-          "width": 1448,
-          "height": 1086
+          "width": 1100,
+          "height": 1120
         },
-        "projection": {
-          "type": "relative-schematic",
-          "bounds": null
-        },
-        "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+        "baseImage": "assets/maps/autumn-2026/dali.svg",
         "title": "大理 · 旅行路线",
-        "ariaLabel": "大理模板化旅行路线示意图，共3天",
-        "description": "地点方位与每日路线示意，非精确导航地图。",
-        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "ariaLabel": "大理原创手绘行程示意图",
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "disclaimer": "原创行程手绘示意图 · 路线不代表实际道路或比例，导航请点地点打开高德。",
         "heading": {
-          "text": "大理",
-          "x": 33,
-          "y": 105,
-          "size": 40
+          "text": "大理 · 旅行手绘地图",
+          "x": 55,
+          "y": 80,
+          "size": 43
         },
+        "subtitle": "一日海东，一日海西 · 沿着洱海慢慢走",
         "legend": {
-          "x": 35,
-          "y": 168,
-          "gap": 43
+          "x": 55,
+          "y": 155,
+          "gap": 38,
+          "columns": 2,
+          "columnGap": 460
         },
         "annotations": [],
-        "routes": [
-          {
-            "day": 4,
-            "color": "#209aaa",
-            "placeIds": [
-              "dlu",
-              "dali-city"
-            ],
-            "paths": [
-              "M862.13 706.56 C821.9 726.1 790.2 754.9 768.9 791.4"
-            ],
-            "overviewPaths": [
-              "M862.13 706.56 C821.9 726.1 790.2 754.9 768.9 791.4"
-            ]
-          },
-          {
-            "day": 5,
-            "color": "#8865a5",
-            "placeIds": [
-              "dali-city",
-              "wenbi",
-              "xiaoputuo",
-              "shuanglang",
-              "dali-city"
-            ],
-            "paths": [
-              "M768.9 791.4 C737.9 702.9 733.4 613.1 755.48 527.22 C756.7 490.8 747.9 456.9 729.74 427.57 C691.3 376.4 669.8 319.0 666.51 258.6 C671.9 445.4 706.7 626.6 768.9 791.4"
-            ],
-            "overviewPaths": [
-              "M768.9 791.4 C737.9 702.9 733.4 613.1 755.48 527.22 C756.7 490.8 747.9 456.9 729.74 427.57 C691.3 376.4 669.8 319.0 666.51 258.6 C671.9 445.4 706.7 626.6 768.9 791.4"
-            ]
-          },
-          {
-            "day": 6,
-            "color": "#df6185",
-            "placeIds": [
-              "dali-city",
-              "xizhou",
-              "panxi",
-              "dali-oldtown",
-              "dali-eastgate"
-            ],
-            "paths": [
-              "M768.9 791.4 C731.7 630.6 667.0 481.7 578.52 353.54 C585.5 388.7 582.4 422.9 569.37 454.15 C556.7 520.8 563.1 585.6 588.15 644.7 C614.6 622.5 645.0 609.2 677.48 605.68"
-            ],
-            "overviewPaths": [
-              "M768.9 791.4 C731.7 630.6 667.0 481.7 578.52 353.54 C585.5 388.7 582.4 422.9 569.37 454.15 C556.7 520.8 563.1 585.6 588.15 644.7 C614.6 622.5 645.0 609.2 677.48 605.68"
-            ]
-          }
-        ],
         "places": [
           {
             "id": "dlu",
-            "x": 862.13,
-            "y": 706.56,
-            "color": "#209aaa",
-            "tx": 894.13,
-            "ty": 674.56,
-            "size": 24,
-            "anchor": "start",
+            "x": 945,
+            "y": 890,
+            "tx": 950,
+            "ty": 938,
+            "anchor": "middle",
             "lines": [
               "大理凤仪机场"
             ],
-            "query": "大理凤仪机场 大理",
             "geo": {
               "lat": 25.649,
               "lng": 100.319
             },
+            "size": 29,
+            "color": "#209aaa",
+            "query": "大理凤仪机场",
             "days": [
               4
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "dali-city",
-            "x": 768.9,
-            "y": 791.4,
-            "color": "#209aaa",
-            "tx": 736.9,
-            "ty": 759.4,
-            "size": 24,
-            "anchor": "end",
+            "x": 659,
+            "y": 930,
+            "tx": 638,
+            "ty": 976,
+            "anchor": "middle",
             "lines": [
               "大理市区"
             ],
-            "query": "大理市区 大理",
             "geo": {
               "lat": 25.599,
               "lng": 100.258
             },
+            "size": 29,
+            "color": "#209aaa",
+            "query": "大理市区",
             "days": [
               4,
               5,
               6
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "wenbi",
-            "x": 755.48,
-            "y": 527.22,
-            "color": "#8865a5",
-            "tx": 833.48,
-            "ty": 465.22,
-            "size": 24,
+            "x": 876,
+            "y": 687,
+            "tx": 903,
+            "ty": 685,
             "anchor": "start",
-            "lines": [
-              "文笔村"
-            ],
-            "query": "文笔村 大理",
             "geo": {
               "lat": 25.759,
               "lng": 100.236
             },
+            "lines": [
+              "文笔村"
+            ],
+            "size": 29,
+            "color": "#8865a5",
+            "query": "文笔村",
             "days": [
               5
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "xiaoputuo",
-            "x": 729.74,
-            "y": 427.57,
-            "color": "#8865a5",
-            "tx": 867.74,
-            "ty": 339.57,
-            "size": 24,
+            "x": 872,
+            "y": 450,
+            "tx": 900,
+            "ty": 444,
             "anchor": "start",
-            "lines": [
-              "小普陀"
-            ],
-            "query": "小普陀 大理",
             "geo": {
               "lat": 25.808,
               "lng": 100.227
             },
+            "lines": [
+              "小普陀"
+            ],
+            "size": 29,
+            "color": "#8865a5",
+            "query": "小普陀",
             "days": [
               5
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "shuanglang",
-            "x": 666.51,
-            "y": 258.6,
-            "color": "#8865a5",
-            "tx": 804.51,
-            "ty": 170.6,
-            "size": 24,
+            "x": 814,
+            "y": 246,
+            "tx": 830,
+            "ty": 221,
             "anchor": "start",
-            "lines": [
-              "双廊古镇"
-            ],
-            "query": "双廊古镇 大理",
             "geo": {
               "lat": 25.913,
               "lng": 100.191
             },
+            "lines": [
+              "双廊古镇"
+            ],
+            "size": 29,
+            "color": "#8865a5",
+            "query": "双廊古镇",
             "days": [
               5
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "xizhou",
-            "x": 578.52,
-            "y": 353.54,
-            "color": "#df6185",
-            "tx": 440.52,
-            "ty": 455.54,
-            "size": 24,
+            "x": 393,
+            "y": 337,
+            "tx": 368,
+            "ty": 327,
             "anchor": "end",
-            "lines": [
-              "喜洲古镇"
-            ],
-            "query": "喜洲古镇 大理",
             "geo": {
               "lat": 25.852,
               "lng": 100.133
             },
+            "lines": [
+              "喜洲古镇"
+            ],
+            "size": 29,
+            "color": "#df6185",
+            "query": "喜洲古镇",
             "days": [
               6
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "panxi",
-            "x": 569.37,
-            "y": 454.15,
-            "color": "#df6185",
-            "tx": 491.37,
-            "ty": 530.15,
-            "size": 24,
+            "x": 378,
+            "y": 490,
+            "tx": 353,
+            "ty": 490,
             "anchor": "end",
             "lines": [
-              "磻溪村海西生态廊道"
+              "磻溪村",
+              "海西生态廊道"
             ],
-            "query": "磻溪村海西生态廊道 大理",
             "geo": {
               "lat": 25.797,
               "lng": 100.141
             },
+            "size": 29,
+            "color": "#df6185",
+            "query": "磻溪村海西生态廊道",
             "days": [
               6
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "dali-oldtown",
-            "x": 588.15,
-            "y": 644.7,
-            "color": "#df6185",
-            "tx": 556.15,
-            "ty": 612.7,
-            "size": 24,
+            "x": 365,
+            "y": 700,
+            "tx": 342,
+            "ty": 693,
             "anchor": "end",
-            "lines": [
-              "大理古城"
-            ],
-            "query": "大理古城 大理",
             "geo": {
               "lat": 25.695,
               "lng": 100.164
             },
+            "lines": [
+              "大理古城"
+            ],
+            "size": 29,
+            "color": "#df6185",
+            "query": "大理古城",
             "days": [
               6
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "dali-eastgate",
-            "x": 677.48,
-            "y": 605.68,
-            "color": "#df6185",
-            "tx": 539.48,
-            "ty": 707.68,
-            "size": 24,
+            "x": 445,
+            "y": 791,
+            "tx": 415,
+            "ty": 810,
             "anchor": "end",
             "lines": [
-              "大理古城东门"
+              "古城东门",
+              "19:30 还车"
             ],
-            "query": "大理古城东门 大理",
             "geo": {
               "lat": 25.699,
               "lng": 100.174
             },
+            "size": 29,
+            "color": "#df6185",
+            "query": "大理古城东门",
             "days": [
               6
-            ]
+            ],
+            "hiddenLabel": false
           },
           {
             "id": "erhai",
-            "x": 659.86,
-            "y": 499.26,
-            "color": "#209aaa",
-            "tx": 797.86,
-            "ty": 601.26,
-            "size": 24,
-            "anchor": "start",
+            "x": 630,
+            "y": 555,
+            "tx": 630,
+            "ty": 550,
+            "anchor": "middle",
             "lines": [
               "洱海"
             ],
-            "query": "洱海 大理",
             "geo": {
               "lat": 25.778,
               "lng": 100.192
             },
-            "days": [
-              4,
-              5,
-              6
-            ]
+            "size": 29,
+            "color": "#397dc1",
+            "query": "洱海",
+            "days": [],
+            "hiddenLabel": true
           }
         ],
         "overviewPlaceIds": [
@@ -2982,8 +3590,111 @@
           "xizhou",
           "panxi",
           "dali-oldtown",
-          "dali-eastgate",
-          "erhai"
+          "dali-eastgate"
+        ],
+        "routes": [
+          {
+            "laneOffset": 0,
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "dlu",
+              "dali-city"
+            ],
+            "paths": [
+              "M945 890 L885 929 L765 940 L659 930"
+            ],
+            "arrows": [
+              {
+                "x": 807.618129936222,
+                "y": 936.0933380891796,
+                "angle": 174.76252393318748
+              }
+            ],
+            "label": "机场取车"
+          },
+          {
+            "laneOffset": 0,
+            "day": 5,
+            "color": "#8865a5",
+            "placeIds": [
+              "dali-city",
+              "wenbi",
+              "xiaoputuo",
+              "shuanglang",
+              "dali-city"
+            ],
+            "paths": [
+              "M659 930 L780 880 L837 791 L876 687",
+              "M876 687 L860 595 L872 522 L872 450",
+              "M872 450 L844 370 L814 246",
+              "M814 246 L844 370 L872 450 L872 522 L860 595 L876 687 L837 791 L780 880 L659 930"
+            ],
+            "arrows": [
+              {
+                "x": 803.1467978955523,
+                "y": 843.85850854905,
+                "angle": -57.362492415714314
+              },
+              {
+                "x": 864.2659351862902,
+                "y": 569.0488942834012,
+                "angle": -80.66500153686177
+              },
+              {
+                "x": 838.9655341170651,
+                "y": 349.1908743505356,
+                "angle": -103.60054251665876
+              },
+              {
+                "x": 867.0891739992726,
+                "y": 635.7627504958173,
+                "angle": 80.13419305691563
+              }
+            ],
+            "label": "海东自驾"
+          },
+          {
+            "laneOffset": 0,
+            "day": 6,
+            "color": "#df6185",
+            "placeIds": [
+              "dali-city",
+              "xizhou",
+              "panxi",
+              "dali-oldtown",
+              "dali-eastgate"
+            ],
+            "paths": [
+              "M659 930 L510 920 L408 868 L325 785 L310 665 L310 570 L322 430 L393 337",
+              "M393 337 L365 409 L378 490",
+              "M378 490 L350 570 L350 645 L365 700",
+              "M365 700 L414 730 L445 791"
+            ],
+            "arrows": [
+              {
+                "x": 319.2791216974227,
+                "y": 739.2329735793815,
+                "angle": -97.12501634890181
+              },
+              {
+                "x": 365.37903027038146,
+                "y": 411.361650146223,
+                "angle": 80.88213724620421
+              },
+              {
+                "x": 350,
+                "y": 593.6251454266443,
+                "angle": 90
+              },
+              {
+                "x": 416.485162330139,
+                "y": 734.8901581334994,
+                "angle": 63.060471936199185
+              }
+            ],
+            "label": "海西 · 古城"
+          }
         ],
         "dailyLayouts": {
           "4": {
@@ -2991,25 +3702,23 @@
               "dlu",
               "dali-city"
             ],
+            "roles": {
+              "dlu": "起点",
+              "dali-city": "终点"
+            },
             "labels": {
               "dlu": {
-                "x": 894.13,
-                "y": 674.56,
-                "anchor": "start"
+                "x": 950,
+                "y": 938,
+                "anchor": "middle"
               },
               "dali-city": {
-                "x": 736.9,
-                "y": 759.4,
-                "anchor": "end"
+                "x": 638,
+                "y": 976,
+                "anchor": "middle"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 815.51,
-                "y": 748.98
-              }
-            ]
+            "transport": []
           },
           "5": {
             "places": [
@@ -3018,50 +3727,35 @@
               "xiaoputuo",
               "shuanglang"
             ],
+            "roles": {
+              "dali-city": "起点 / 终点",
+              "wenbi": "途经点",
+              "xiaoputuo": "途经点",
+              "shuanglang": "途经点"
+            },
             "labels": {
               "dali-city": {
-                "x": 736.9,
-                "y": 759.4,
-                "anchor": "end"
+                "x": 638,
+                "y": 976,
+                "anchor": "middle"
               },
               "wenbi": {
-                "x": 833.48,
-                "y": 465.22,
+                "x": 903,
+                "y": 685,
                 "anchor": "start"
               },
               "xiaoputuo": {
-                "x": 867.74,
-                "y": 339.57,
+                "x": 900,
+                "y": 444,
                 "anchor": "start"
               },
               "shuanglang": {
-                "x": 804.51,
-                "y": 170.6,
+                "x": 830,
+                "y": 221,
                 "anchor": "start"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 762.19,
-                "y": 659.31
-              },
-              {
-                "items": [],
-                "x": 742.61,
-                "y": 477.39
-              },
-              {
-                "items": [],
-                "x": 698.13,
-                "y": 343.09
-              },
-              {
-                "items": [],
-                "x": 717.7,
-                "y": 525
-              }
-            ]
+            "transport": []
           },
           "6": {
             "places": [
@@ -3071,108 +3765,217 @@
               "dali-oldtown",
               "dali-eastgate"
             ],
+            "roles": {
+              "dali-city": "起点",
+              "xizhou": "途经点",
+              "panxi": "途经点",
+              "dali-oldtown": "途经点",
+              "dali-eastgate": "终点"
+            },
             "labels": {
               "dali-city": {
-                "x": 736.9,
-                "y": 759.4,
-                "anchor": "end"
+                "x": 638,
+                "y": 976,
+                "anchor": "middle"
               },
               "xizhou": {
-                "x": 440.52,
-                "y": 455.54,
+                "x": 368,
+                "y": 327,
                 "anchor": "end"
               },
               "panxi": {
-                "x": 491.37,
-                "y": 530.15,
+                "x": 353,
+                "y": 490,
                 "anchor": "end"
               },
               "dali-oldtown": {
-                "x": 556.15,
-                "y": 612.7,
+                "x": 342,
+                "y": 693,
                 "anchor": "end"
               },
               "dali-eastgate": {
-                "x": 539.48,
-                "y": 707.68,
+                "x": 415,
+                "y": 810,
                 "anchor": "end"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 673.71,
-                "y": 572.47
-              },
-              {
-                "items": [],
-                "x": 573.94,
-                "y": 403.85
-              },
-              {
-                "items": [],
-                "x": 578.76,
-                "y": 549.42
-              },
-              {
-                "items": [],
-                "x": 632.82,
-                "y": 625.19
-              }
-            ]
+            "transport": []
           }
-        }
+        },
+        "illustrated": true,
+        "roads": [
+          "M945 890 L885 929 L765 940 L659 930",
+          "M659 930 L780 880 L837 791 L876 687",
+          "M876 687 L860 595 L872 522 L872 450",
+          "M872 450 L844 370 L814 246",
+          "M659 930 L510 920 L408 868 L325 785 L310 665 L310 570 L322 430 L393 337",
+          "M393 337 L365 409 L378 490",
+          "M378 490 L350 570 L350 645 L365 700",
+          "M365 700 L414 730 L445 791"
+        ],
+        "notes": [
+          "9/29 海东：文笔村 → 小普陀 → 双廊，原路回市区",
+          "9/30 海西：喜洲 → 磻溪 → 古城，19:30 东门还车"
+        ]
       },
       {
         "id": "lugu-lake",
         "label": "泸沽湖",
         "countryCode": "CN",
-        "scope": "template-schematic",
-        "mapMode": "frozen-template",
-        "templateId": "urban-radial",
-        "mapModeReason": "compact-city-route",
-        "mapModeMetrics": {
-          "placeCount": 5,
-          "geoPlaceCount": 5,
-          "widthKm": 3.34,
-          "heightKm": 6.38,
-          "spanKm": 6.39,
-          "averageNearestKm": 2.34,
-          "components": 1,
-          "largestLegKm": 6.39,
-          "jumpRatio": 1.2
-        },
+        "scope": "trip-illustration",
+        "mapMode": "original-illustration",
+        "templateId": "autumn-2026-original",
         "days": [
           7,
           8
         ],
         "canvas": {
-          "width": 1448,
-          "height": 1086
+          "width": 1100,
+          "height": 1120
         },
-        "projection": {
-          "type": "relative-schematic",
-          "bounds": null
-        },
-        "baseImage": "assets/maps/templates/template-04-urban.webp",
+        "baseImage": "assets/maps/autumn-2026/lugu-lake.svg",
         "title": "泸沽湖 · 旅行路线",
-        "ariaLabel": "泸沽湖模板化旅行路线示意图，共2天",
-        "description": "地点方位与每日路线示意，非精确导航地图。",
-        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "ariaLabel": "泸沽湖原创手绘行程示意图",
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "disclaimer": "原创行程手绘示意图 · 路线不代表实际道路或比例，导航请点地点打开高德。",
         "heading": {
-          "text": "泸沽湖",
-          "x": 33,
-          "y": 105,
-          "size": 40
+          "text": "泸沽湖 · 旅行手绘地图",
+          "x": 55,
+          "y": 80,
+          "size": 43
         },
+        "subtitle": "10/1 西岸环湖 · 10/2 早起去女神山",
         "legend": {
-          "x": 35,
-          "y": 168,
-          "gap": 43
+          "x": 55,
+          "y": 155,
+          "gap": 38,
+          "columns": 2,
+          "columnGap": 460
         },
         "annotations": [],
+        "places": [
+          {
+            "id": "lugu",
+            "x": 636,
+            "y": 595,
+            "tx": 636,
+            "ty": 595,
+            "anchor": "middle",
+            "lines": [
+              "泸沽湖"
+            ],
+            "geo": {
+              "lat": 27.705,
+              "lng": 100.784
+            },
+            "size": 29,
+            "color": "#397dc1",
+            "query": "泸沽湖",
+            "days": [],
+            "hiddenLabel": true
+          },
+          {
+            "id": "daluoshui",
+            "x": 425,
+            "y": 860,
+            "tx": 400,
+            "ty": 881,
+            "anchor": "end",
+            "lines": [
+              "大落水村",
+              "凿见民宿（暂定）"
+            ],
+            "geo": {
+              "lat": 27.68,
+              "lng": 100.761
+            },
+            "size": 29,
+            "color": "#397dc1",
+            "query": "大落水村",
+            "days": [
+              7,
+              8
+            ],
+            "hiddenLabel": false
+          },
+          {
+            "id": "lugu-lovers",
+            "x": 302,
+            "y": 641,
+            "tx": 277,
+            "ty": 638,
+            "anchor": "end",
+            "lines": [
+              "里拜情人滩"
+            ],
+            "geo": {
+              "lat": 27.703251,
+              "lng": 100.750042
+            },
+            "size": 29,
+            "color": "#397dc1",
+            "query": "里拜情人滩",
+            "days": [
+              7
+            ],
+            "hiddenLabel": false
+          },
+          {
+            "id": "lige",
+            "x": 365,
+            "y": 430,
+            "tx": 335,
+            "ty": 440,
+            "anchor": "end",
+            "lines": [
+              "里格半岛",
+              "观景台"
+            ],
+            "geo": {
+              "lat": 27.727,
+              "lng": 100.751
+            },
+            "size": 29,
+            "color": "#397dc1",
+            "query": "里格半岛观景台",
+            "days": [
+              7
+            ],
+            "hiddenLabel": false
+          },
+          {
+            "id": "gemu",
+            "x": 477,
+            "y": 288,
+            "tx": 513,
+            "ty": 278,
+            "anchor": "start",
+            "lines": [
+              "女神山索道",
+              "10/2 早起"
+            ],
+            "geo": {
+              "lat": 27.737447,
+              "lng": 100.759798
+            },
+            "size": 29,
+            "color": "#e77e22",
+            "query": "格姆女神山索道",
+            "days": [
+              8
+            ],
+            "hiddenLabel": false
+          }
+        ],
+        "overviewPlaceIds": [
+          "daluoshui",
+          "lugu-lovers",
+          "lige",
+          "gemu"
+        ],
         "routes": [
           {
+            "laneOffset": -6,
             "day": 7,
             "color": "#397dc1",
             "placeIds": [
@@ -3182,13 +3985,31 @@
               "daluoshui"
             ],
             "paths": [
-              "M792.47 810.55 C737.1 742.2 704.5 664.3 696.87 581.43 C723.1 502.7 726.0 423.1 705.23 347.4 C764.4 499.3 794.0 656.8 792.47 810.55"
+              "M425 860 L371 793 L325 728 L302 641",
+              "M302 641 L305 545 L332 485 L365 430",
+              "M365 430 L332 485 L305 545 L302 641 L325 728 L371 793 L425 860"
             ],
-            "overviewPaths": [
-              "M792.47 810.55 C737.1 742.2 704.5 664.3 696.87 581.43 C723.1 502.7 726.0 423.1 705.23 347.4 C764.4 499.3 794.0 656.8 792.47 810.55"
-            ]
+            "arrows": [
+              {
+                "x": 346.86298058895204,
+                "y": 758.8933421365628,
+                "angle": -125.28674897505971
+              },
+              {
+                "x": 311.9533717237361,
+                "y": 529.548062836142,
+                "angle": -65.77225468204583
+              },
+              {
+                "x": 305.7940786048757,
+                "y": 655.3515147227907,
+                "angle": 75.1916229609576
+              }
+            ],
+            "label": "西岸环湖"
           },
           {
+            "laneOffset": 6,
             "day": 8,
             "color": "#e77e22",
             "placeIds": [
@@ -3197,125 +4018,18 @@
               "daluoshui"
             ],
             "paths": [
-              "M792.47 810.55 C818.9 617.5 815.3 425.0 781.99 244.45 C815.5 436.4 819.1 628.8 792.47 810.55"
+              "M425 860 L371 793 L325 728 L302 641 L305 545 L332 485 L365 430 L363 351 L419 308 L477 288",
+              "M477 288 L419 308 L363 351 L365 430 L332 485 L305 545 L302 641 L325 728 L371 793 L425 860"
             ],
-            "overviewPaths": [
-              "M792.47 810.55 C818.9 617.5 815.3 425.0 781.99 244.45 C815.5 436.4 819.1 628.8 792.47 810.55"
-            ]
+            "arrows": [
+              {
+                "x": 304.8313079932904,
+                "y": 550.3981442147062,
+                "angle": -88.21008939175394
+              }
+            ],
+            "label": "女神山往返"
           }
-        ],
-        "places": [
-          {
-            "id": "lugu",
-            "x": 993.13,
-            "y": 564.19,
-            "color": "#397dc1",
-            "tx": 1025.13,
-            "ty": 532.19,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "泸沽湖"
-            ],
-            "query": "泸沽湖 泸沽湖",
-            "geo": {
-              "lat": 27.705,
-              "lng": 100.784
-            },
-            "days": []
-          },
-          {
-            "id": "daluoshui",
-            "x": 792.47,
-            "y": 810.55,
-            "color": "#397dc1",
-            "tx": 760.47,
-            "ty": 778.55,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "大落水村"
-            ],
-            "query": "大落水村 泸沽湖",
-            "geo": {
-              "lat": 27.68,
-              "lng": 100.761
-            },
-            "days": [
-              7,
-              8
-            ]
-          },
-          {
-            "id": "lugu-lovers",
-            "x": 696.87,
-            "y": 581.43,
-            "color": "#397dc1",
-            "tx": 774.87,
-            "ty": 519.43,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "里拜情人滩"
-            ],
-            "query": "里拜情人滩 泸沽湖",
-            "geo": {
-              "lat": 27.703251,
-              "lng": 100.750042
-            },
-            "days": [
-              7
-            ]
-          },
-          {
-            "id": "lige",
-            "x": 705.23,
-            "y": 347.4,
-            "color": "#397dc1",
-            "tx": 627.23,
-            "ty": 285.4,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "里格半岛观景台"
-            ],
-            "query": "里格半岛观景台 泸沽湖",
-            "geo": {
-              "lat": 27.727,
-              "lng": 100.751
-            },
-            "days": [
-              7
-            ]
-          },
-          {
-            "id": "gemu",
-            "x": 781.99,
-            "y": 244.45,
-            "color": "#e77e22",
-            "tx": 919.99,
-            "ty": 156.45,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "格姆女神山索道"
-            ],
-            "query": "格姆女神山索道 泸沽湖",
-            "geo": {
-              "lat": 27.737447,
-              "lng": 100.759798
-            },
-            "days": [
-              8
-            ]
-          }
-        ],
-        "overviewPlaceIds": [
-          "lugu",
-          "daluoshui",
-          "lugu-lovers",
-          "lige",
-          "gemu"
         ],
         "dailyLayouts": {
           "7": {
@@ -3324,122 +4038,198 @@
               "lugu-lovers",
               "lige"
             ],
+            "roles": {
+              "daluoshui": "起点 / 终点",
+              "lugu-lovers": "途经点",
+              "lige": "途经点"
+            },
             "labels": {
               "daluoshui": {
-                "x": 760.47,
-                "y": 778.55,
+                "x": 400,
+                "y": 881,
                 "anchor": "end"
               },
               "lugu-lovers": {
-                "x": 774.87,
-                "y": 519.43,
-                "anchor": "start"
+                "x": 277,
+                "y": 638,
+                "anchor": "end"
               },
               "lige": {
-                "x": 627.23,
-                "y": 285.4,
+                "x": 335,
+                "y": 440,
                 "anchor": "end"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 744.67,
-                "y": 695.99
-              },
-              {
-                "items": [],
-                "x": 701.05,
-                "y": 464.41
-              },
-              {
-                "items": [],
-                "x": 748.85,
-                "y": 578.97
-              }
-            ]
+            "transport": []
           },
           "8": {
             "places": [
               "daluoshui",
               "gemu"
             ],
+            "roles": {
+              "daluoshui": "起点 / 终点",
+              "gemu": "途经点"
+            },
             "labels": {
               "daluoshui": {
-                "x": 760.47,
-                "y": 778.55,
+                "x": 400,
+                "y": 881,
                 "anchor": "end"
               },
               "gemu": {
-                "x": 919.99,
-                "y": 156.45,
+                "x": 513,
+                "y": 278,
                 "anchor": "start"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 787.23,
-                "y": 527.5
-              },
-              {
-                "items": [],
-                "x": 787.23,
-                "y": 527.5
-              }
-            ]
+            "transport": []
           }
-        }
+        },
+        "illustrated": true,
+        "roads": [
+          "M425 860 L371 793 L325 728 L302 641",
+          "M302 641 L305 545 L332 485 L365 430",
+          "M365 430 L363 351 L419 308 L477 288"
+        ],
+        "notes": [
+          "10/1 下午：大落水 → 里拜情人滩 → 里格 → 返回",
+          "10/2：女神山索道往返后离开湖区，下午回丽江"
+        ]
       },
       {
         "id": "lijiang",
         "label": "丽江",
         "countryCode": "CN",
-        "scope": "template-schematic",
-        "mapMode": "frozen-template",
-        "templateId": "urban-radial",
-        "mapModeReason": "compact-city-route",
-        "mapModeMetrics": {
-          "placeCount": 4,
-          "geoPlaceCount": 4,
-          "widthKm": 3.56,
-          "heightKm": 35.96,
-          "spanKm": 36.2,
-          "averageNearestKm": 10.57,
-          "components": 1,
-          "largestLegKm": 21.73,
-          "jumpRatio": 1.5
-        },
+        "scope": "trip-illustration",
+        "mapMode": "original-illustration",
+        "templateId": "autumn-2026-original",
         "days": [
           9
         ],
         "canvas": {
-          "width": 1448,
-          "height": 1086
+          "width": 1100,
+          "height": 1120
         },
-        "projection": {
-          "type": "relative-schematic",
-          "bounds": null
-        },
-        "baseImage": "assets/maps/templates/template-04-urban.webp",
+        "baseImage": "assets/maps/autumn-2026/lijiang.svg",
         "title": "丽江 · 旅行路线",
-        "ariaLabel": "丽江模板化旅行路线示意图，共1天",
-        "description": "地点方位与每日路线示意，非精确导航地图。",
-        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "ariaLabel": "丽江原创手绘行程示意图",
+        "description": "为本次旅行原创绘制的路线示意图，湖形与道路经过简化；请使用高德导航。",
+        "disclaimer": "原创行程手绘示意图 · 路线不代表实际道路或比例，导航请点地点打开高德。",
         "heading": {
-          "text": "丽江",
-          "x": 33,
-          "y": 105,
-          "size": 40
+          "text": "丽江 · 旅行手绘地图",
+          "x": 55,
+          "y": 80,
+          "size": 43
         },
+        "subtitle": "10/2 下午抵达丽江 · 10/3 玉湖与束河",
         "legend": {
-          "x": 35,
-          "y": 168,
-          "gap": 43
+          "x": 55,
+          "y": 155,
+          "gap": 38,
+          "columns": 2,
+          "columnGap": 460
         },
         "annotations": [],
+        "places": [
+          {
+            "id": "lijiang-city",
+            "x": 603,
+            "y": 764,
+            "tx": 638,
+            "ty": 764,
+            "anchor": "start",
+            "geo": {
+              "lat": 26.875,
+              "lng": 100.232
+            },
+            "lines": [
+              "丽江市区"
+            ],
+            "size": 29,
+            "color": "#618344",
+            "query": "丽江市区",
+            "days": [
+              9
+            ],
+            "hiddenLabel": false
+          },
+          {
+            "id": "yuhu",
+            "x": 550,
+            "y": 389,
+            "tx": 583,
+            "ty": 379,
+            "anchor": "start",
+            "geo": {
+              "lat": 27.004,
+              "lng": 100.21
+            },
+            "lines": [
+              "玉湖村"
+            ],
+            "size": 29,
+            "color": "#618344",
+            "query": "玉湖村",
+            "days": [
+              9
+            ],
+            "hiddenLabel": false
+          },
+          {
+            "id": "shuhe",
+            "x": 462,
+            "y": 591,
+            "tx": 493,
+            "ty": 593,
+            "anchor": "start",
+            "geo": {
+              "lat": 26.923,
+              "lng": 100.21
+            },
+            "lines": [
+              "束河古镇"
+            ],
+            "size": 29,
+            "color": "#618344",
+            "query": "束河古镇",
+            "days": [
+              9
+            ],
+            "hiddenLabel": false
+          },
+          {
+            "id": "ljg",
+            "x": 790,
+            "y": 938,
+            "tx": 823,
+            "ty": 941,
+            "anchor": "start",
+            "lines": [
+              "丽江三义机场"
+            ],
+            "geo": {
+              "lat": 26.68,
+              "lng": 100.246
+            },
+            "size": 29,
+            "color": "#618344",
+            "query": "丽江三义机场",
+            "days": [
+              9
+            ],
+            "hiddenLabel": false
+          }
+        ],
+        "overviewPlaceIds": [
+          "lijiang-city",
+          "yuhu",
+          "shuhe",
+          "ljg"
+        ],
         "routes": [
           {
+            "laneOffset": 0,
             "day": 9,
             "color": "#618344",
             "placeIds": [
@@ -3450,104 +4240,35 @@
               "ljg"
             ],
             "paths": [
-              "M856.15 496.97 C825.5 434.2 814.3 368.1 823.22 302.65 C810.7 336.8 808.5 371.5 816.54 404.92 C839.2 432.3 852.7 463.6 856.15 496.97 C834.6 583.9 838.3 669.7 866.99 749.35"
+              "M603 764 L709 699 L710 539 L634 445 L550 389",
+              "M550 389 L511 453 L493 523 L462 591",
+              "M462 591 L491 653 L533 718 L603 764",
+              "M603 764 L663 824 L727 890 L790 938"
             ],
-            "overviewPaths": [
-              "M856.15 496.97 C825.5 434.2 814.3 368.1 823.22 302.65 C810.7 336.8 808.5 371.5 816.54 404.92 C839.2 432.3 852.7 463.6 856.15 496.97 C834.6 583.9 838.3 669.7 866.99 749.35"
-            ]
+            "arrows": [
+              {
+                "x": 709.8046605247835,
+                "y": 570.2543160346441,
+                "angle": -89.64190604067643
+              },
+              {
+                "x": 502.0266212574002,
+                "y": 487.89647288788797,
+                "angle": 104.420773127511
+              },
+              {
+                "x": 516.1557091601093,
+                "y": 691.9314546525501,
+                "angle": 57.1313210666325
+              },
+              {
+                "x": 693.0331996890326,
+                "y": 854.9717371793148,
+                "angle": 45.88140399658214
+              }
+            ],
+            "label": "玉湖 · 束河 · 返程"
           }
-        ],
-        "places": [
-          {
-            "id": "lijiang-city",
-            "x": 856.15,
-            "y": 496.97,
-            "color": "#618344",
-            "tx": 888.15,
-            "ty": 464.97,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "丽江市区"
-            ],
-            "query": "丽江市区 丽江",
-            "geo": {
-              "lat": 26.875,
-              "lng": 100.232
-            },
-            "days": [
-              9
-            ]
-          },
-          {
-            "id": "yuhu",
-            "x": 823.22,
-            "y": 302.65,
-            "color": "#618344",
-            "tx": 791.22,
-            "ty": 270.65,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "玉湖村"
-            ],
-            "query": "玉湖村 丽江",
-            "geo": {
-              "lat": 27.004,
-              "lng": 100.21
-            },
-            "days": [
-              9
-            ]
-          },
-          {
-            "id": "shuhe",
-            "x": 816.54,
-            "y": 404.92,
-            "color": "#618344",
-            "tx": 894.54,
-            "ty": 342.92,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "束河古镇"
-            ],
-            "query": "束河古镇 丽江",
-            "geo": {
-              "lat": 26.923,
-              "lng": 100.21
-            },
-            "days": [
-              9
-            ]
-          },
-          {
-            "id": "ljg",
-            "x": 866.99,
-            "y": 749.35,
-            "color": "#618344",
-            "tx": 788.99,
-            "ty": 687.35,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "丽江三义机场"
-            ],
-            "query": "丽江三义机场 丽江",
-            "geo": {
-              "lat": 26.68,
-              "lng": 100.246
-            },
-            "days": [
-              9
-            ]
-          }
-        ],
-        "overviewPlaceIds": [
-          "lijiang-city",
-          "yuhu",
-          "shuhe",
-          "ljg"
         ],
         "dailyLayouts": {
           "9": {
@@ -3557,52 +4278,48 @@
               "shuhe",
               "ljg"
             ],
+            "roles": {
+              "lijiang-city": "起点",
+              "yuhu": "途经点",
+              "shuhe": "途经点",
+              "ljg": "终点"
+            },
             "labels": {
               "lijiang-city": {
-                "x": 888.15,
-                "y": 464.97,
+                "x": 638,
+                "y": 764,
                 "anchor": "start"
               },
               "yuhu": {
-                "x": 791.22,
-                "y": 270.65,
-                "anchor": "end"
+                "x": 583,
+                "y": 379,
+                "anchor": "start"
               },
               "shuhe": {
-                "x": 894.54,
-                "y": 342.92,
+                "x": 493,
+                "y": 593,
                 "anchor": "start"
               },
               "ljg": {
-                "x": 788.99,
-                "y": 687.35,
-                "anchor": "end"
+                "x": 823,
+                "y": 941,
+                "anchor": "start"
               }
             },
-            "transport": [
-              {
-                "items": [],
-                "x": 839.68,
-                "y": 399.81
-              },
-              {
-                "items": [],
-                "x": 819.88,
-                "y": 353.78
-              },
-              {
-                "items": [],
-                "x": 836.35,
-                "y": 450.95
-              },
-              {
-                "items": [],
-                "x": 861.57,
-                "y": 623.16
-              }
-            ]
+            "transport": []
           }
-        }
+        },
+        "illustrated": true,
+        "roads": [
+          "M603 764 L709 699 L710 539 L634 445 L550 389",
+          "M550 389 L511 453 L493 523 L462 591",
+          "M462 591 L491 653 L533 718 L603 764",
+          "M603 764 L663 824 L727 890 L790 938"
+        ],
+        "notes": [
+          "10/3：丽江市区 → 玉湖村 → 束河古镇 → 机场",
+          "建议 21:00 抵达机场 · 航班 23:35 起飞"
+        ]
       }
     ]
   }

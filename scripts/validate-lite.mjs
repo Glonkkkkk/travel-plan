@@ -190,6 +190,15 @@ if (!uninitialized && config?.modules?.overview === true && map?.mapMode === "te
     if (place.countryCode && destinationCodes.size && !destinationCodes.has(String(place.countryCode).toUpperCase())) warnings.push(`地点 ${place.id} 不属于目的地国家，将不会显示在地图中`);
     if (!Number.isFinite(Number(place.geo?.lat)) || !Number.isFinite(Number(place.geo?.lng))) warnings.push(`地点 ${place.id || "unknown"} 缺少有效经纬度，将使用确定性备用布局`);
   }
+  for (const region of regionDefinitions) {
+    const art = region?.illustration;
+    if (!art) continue;
+    if (!art.baseImage || !exists(art.baseImage)) errors.push(`缺少原创地图底图：${region.id}`);
+    for (const place of map.places.filter(p => p.mapRegionId === region.id)) {
+      const point = art.points?.[place.id];
+      if (!point || ![point.x, point.y, point.tx, point.ty].every(Number.isFinite)) errors.push(`缺少原创地图点位：${place.id}`);
+    }
+  }
   for (const route of map.routes || []) {
     if (!Number.isInteger(route.day) || !Array.isArray(route.placeIds) || route.placeIds.length < 2) errors.push("每条 Map route 必须包含 day 和至少两个 placeIds");
     for (const placeId of route.placeIds || []) if (!placeIds.has(placeId)) errors.push(`Map route 引用了不存在的地点：${placeId}`);

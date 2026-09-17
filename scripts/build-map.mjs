@@ -3,6 +3,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { buildIllustratedRegion } from "./build-illustrated-region.mjs";
+
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MANIFEST_PATH = "assets/maps/templates/manifest.json";
 const GOLDEN = Object.freeze({
@@ -427,6 +429,7 @@ function mapDataForRegion(mapData, region, regionCount) {
 
 function buildRegion(mapData, manifest) {
   if (!mapData.places.length) return null;
+  if (mapData.region.illustration) return buildIllustratedRegion(mapData, GOLDEN.routeColors);
   const selection = templateSelection(mapData, manifest);
   const template = selection.template;
   const points = separatePoints(projectedLayout(mapData.places, mapData.routes, template.safeArea), mapData.places, template.safeArea);
