@@ -1033,9 +1033,9 @@
       "type": "airport",
       "mapRegionId": "guizhou",
       "navigation": {
-        "query": "贵州 贵阳龙洞堡机场",
+        "query": "贵阳龙洞堡机场",
         "provider": "amap",
-        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%B4%B5%E9%98%B3%E9%BE%99%E6%B4%9E%E5%A0%A1%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E9%98%B3%E9%BE%99%E6%B4%9E%E5%A0%A1%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
       }
     },
     {
@@ -1059,9 +1059,9 @@
       "type": "station",
       "mapRegionId": "guizhou",
       "navigation": {
-        "query": "贵州 贵阳站",
+        "query": "贵阳站",
         "provider": "amap",
-        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%B4%B5%E9%98%B3%E7%AB%99&view=map&callnative=1&src=travelplan"
+        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E9%98%B3%E7%AB%99&view=map&callnative=1&src=travelplan"
       }
     },
     {
@@ -1098,9 +1098,9 @@
       "type": "station",
       "mapRegionId": "guizhou",
       "navigation": {
-        "query": "贵州 荔波站",
+        "query": "荔波站",
         "provider": "amap",
-        "url": "https://uri.amap.com/search?keyword=%E8%B4%B5%E5%B7%9E+%E8%8D%94%E6%B3%A2%E7%AB%99&view=map&callnative=1&src=travelplan"
+        "url": "https://uri.amap.com/search?keyword=%E8%8D%94%E6%B3%A2%E7%AB%99&view=map&callnative=1&src=travelplan"
       }
     },
     {
@@ -1137,9 +1137,9 @@
       "type": "airport",
       "mapRegionId": "dali",
       "navigation": {
-        "query": "云南大理 大理凤仪机场",
+        "query": "大理凤仪机场",
         "provider": "amap",
-        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E5%A4%A7%E7%90%86+%E5%A4%A7%E7%90%86%E5%87%A4%E4%BB%AA%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%A7%E7%90%86%E5%87%A4%E4%BB%AA%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
       }
     },
     {
@@ -1319,9 +1319,9 @@
       "type": "airport",
       "mapRegionId": "lijiang",
       "navigation": {
-        "query": "云南丽江 丽江三义机场",
+        "query": "丽江三义机场",
         "provider": "amap",
-        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%8D%97%E4%B8%BD%E6%B1%9F+%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+        "url": "https://uri.amap.com/search?keyword=%E4%B8%BD%E6%B1%9F%E4%B8%89%E4%B9%89%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
       }
     },
     {
@@ -1332,9 +1332,9 @@
       "type": "airport",
       "mapRegionId": "chongqing",
       "navigation": {
-        "query": "重庆 重庆江北机场",
+        "query": "重庆江北机场",
         "provider": "amap",
-        "url": "https://uri.amap.com/search?keyword=%E9%87%8D%E5%BA%86+%E9%87%8D%E5%BA%86%E6%B1%9F%E5%8C%97%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
+        "url": "https://uri.amap.com/search?keyword=%E9%87%8D%E5%BA%86%E6%B1%9F%E5%8C%97%E6%9C%BA%E5%9C%BA&view=map&callnative=1&src=travelplan"
       }
     },
     {
