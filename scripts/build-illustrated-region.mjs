@@ -26,7 +26,22 @@ export function buildIllustratedRegion(map, colors) {
     }
     throw new Error(`No illustrated road from ${from} to ${to}`);
   }
-  const path = ps => ps.map((p,i)=>`${i?'L':'M'}${p[0]} ${p[1]}`).join(' ');
+  const path = ps => {
+    if (ps.length < 2) return '';
+    const f = n => Number(n.toFixed(2));
+    let d = `M${ps[0][0]} ${ps[0][1]}`;
+    for (let i = 1; i < ps.length - 1; i++) {
+      const [a,b,c] = [ps[i-1],ps[i],ps[i+1]];
+      const before = Math.hypot(b[0]-a[0],b[1]-a[1]);
+      const after = Math.hypot(c[0]-b[0],c[1]-b[1]);
+      const radius = Math.min(19,before/3,after/3);
+      if (!radius) continue;
+      const u = [b[0]+(a[0]-b[0])*radius/before,b[1]+(a[1]-b[1])*radius/before];
+      const v = [b[0]+(c[0]-b[0])*radius/after,b[1]+(c[1]-b[1])*radius/after];
+      d += ` L${f(u[0])} ${f(u[1])} Q${b[0]} ${b[1]} ${f(v[0])} ${f(v[1])}`;
+    }
+    return d + ` L${ps.at(-1)[0]} ${ps.at(-1)[1]}`;
+  };
   const arrow = ps => {
     let remain=distance(ps)/2;
     for(let i=1;i<ps.length;i++) {
@@ -35,7 +50,7 @@ export function buildIllustratedRegion(map, colors) {
       remain-=len;
     }
   };
-  const places=map.places.map(p=>({id:p.id,...art.points[p.id],geo:p.geo,lines:art.points[p.id].lines || [p.nameZh || p.name],size:29,color:colors[((map.routes.find(r=>r.placeIds.includes(p.id))?.day||1)-1)%colors.length],query:p.query || p.nameZh || p.name,days:map.routes.filter(r=>r.placeIds.includes(p.id)).map(r=>r.day),hiddenLabel:(art.hiddenLabels||[]).includes(p.id)}));
+  const places=map.places.map(p=>({id:p.id,...art.points[p.id],geo:p.geo,lines:art.points[p.id].lines || [p.nameZh || p.name],size:27,color:colors[((map.routes.find(r=>r.placeIds.includes(p.id))?.day||1)-1)%colors.length],query:p.query || p.nameZh || p.name,days:map.routes.filter(r=>r.placeIds.includes(p.id)).map(r=>r.day),hiddenLabel:(art.hiddenLabels||[]).includes(p.id)}));
   const visible=places.filter(p=>!p.hiddenLabel);
   const routes=map.routes.map((r, routeIndex)=>{
     const legs=r.placeIds.slice(1).map((id,i)=>connect(r.placeIds[i],id));
